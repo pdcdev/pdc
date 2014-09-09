@@ -1147,6 +1147,88 @@ section.goto {
         }
     }
 }
+
+.projects_section_tiny {
+    @include pad(0 $desk);
+    @include media($tablet) {
+        @include pad(0);
+    }
+    .projects_container {
+        article.project_thumb {
+            opacity: 0;
+            @include span-columns(4);
+            @include omega(4n);
+            margin-bottom: 3em;
+            @include media($tablet) {
+                @include span-columns(8);
+                margin-bottom: 8em;
+            }
+            @include media($mobile) {
+                @include span-columns(4);
+                margin: 0;
+            }
+            .image_box {
+                .swapper {
+                    position: relative;
+                    overflow: hidden;
+                    background-color: $bg-gray;
+                    img {
+                        width: 100%;
+                        @include transition (all .45s ease-in-out);
+                        &:nth-of-type(1) {
+                            @include transform(scale(1));
+                            top: 0;
+                        }
+                        &:nth-of-type(2) {
+                            position: absolute;
+                            opacity: 0;
+                            top: 0;
+                            @include transform(scale(1.05));
+                        }
+                    }
+                }
+                .project_label {
+                    position: relative;
+                    background-color: $bg-gray;
+                    @include pad(1em);
+                    .project_title {
+                        @include transition (all .3s ease-in-out);
+                        font-family: $rotisSemiSansExtraBold;
+                        @include type($small, $dark-gray, 1.25em);
+                    }
+                    .caption {
+                        @include transition (all .3s ease-in-out);
+                        @include type($small, $medium-gray, 1.25em);
+                    }
+                }
+            }
+            &:hover {
+                .image_box {
+                    img {
+                        &:nth-of-type(1) {
+                            @include transform(scale(1.05));
+                            opacity: 0;
+                        }
+                        &:nth-of-type(2) {
+                            opacity: 1;
+                            @include transform(scale(1));
+                        }
+                    }
+                    .project_label {
+                        .project_title {
+                            color: #000;
+                        }
+                        .caption {
+                            /*color: #000;*/
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 #map-canvas {
     height: 800px;
     width: 100%; 

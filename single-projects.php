@@ -192,4 +192,36 @@
     </div>
 </aside>
 
+    <section class="projects_section_tiny">
+        <?php
+            $args = array(
+                'post_type' => 'projects'
+            );
+            $the_query = new WP_Query( $args );
+        ?>
+
+        <?php if ( have_posts() ) : ?>
+        <aside class="projects_container">
+            <div>
+                <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <article class="project_thumb">
+                    <div class="image_box">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="swapper">
+                                <?php if(get_field("cover_image")) : ?><img src="<?php get_image( get_field("cover_image"), "half"); ?>"><?php endif; ?>
+                                <?php if(get_field("cover_image_hover")) : ?><img src="<?php get_image( get_field("cover_image_hover"), "half"); ?>"><?php endif; ?>
+                            </div>
+                            <div class="project_label">
+                                <p class="project_title"><?php the_title(); ?></p>
+                                
+                            </div>
+                        </a> <!-- the permalink -->
+                    </div>
+                </article>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            </div>
+        </aside>
+    </section>
+
 <?php get_footer(); ?>
