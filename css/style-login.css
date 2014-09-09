@@ -1,0 +1,6 @@
+body.login div#login h1 a {
+  background-image: url("../images/admin/pdc_admin.svg");
+  background-size: 300px 65px;
+  height: 60px;
+  width: 100%;
+  pointer-events: none; }

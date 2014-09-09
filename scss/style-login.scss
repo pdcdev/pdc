@@ -1,0 +1,21 @@
+body.login div#login {
+    h1 a {
+        background-image: url('../images/admin/pdc_admin.svg');
+        background-size: 300px 65px;
+        height: 60px;
+        width: 100%;
+        pointer-events:none;
+    }
+    form#loginform {
+        p label {}
+        input! {
+            &#user_login, &#user_pass {}
+        }
+        p {
+            &.forgetmenot input#rememberme, &.submit input#wp-submit {}
+        }
+    }
+    p {
+        &#nav a, &#backtoblog a {}
+    }
+}
