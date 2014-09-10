@@ -1472,7 +1472,8 @@ section {
         &.dark_arrow {
             color: rgba(#000, .2);
             &:hover {
-                color: rgba(#000, 1);
+                /*color: rgba(#000, 1);*/
+                color: $hover-color;
             }
         }
     }

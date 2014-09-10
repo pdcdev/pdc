@@ -1799,7 +1799,8 @@ section {
     .more_arrow i.dark_arrow {
       color: rgba(0, 0, 0, 0.2); }
       .more_arrow i.dark_arrow:hover {
-        color: black; }
+        /*color: rgba(#000, 1);*/
+        color: #00aeef; }
 
 .internal_btn {
   padding: 6em 0;
