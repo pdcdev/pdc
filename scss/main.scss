@@ -220,7 +220,6 @@ section {
 }
 .clearbg {
     background-color: transparent;
-    text-shadow: 0 0 40px rgba(#000, .2);
     &.active {
         @include media($tablet) {
             .nav_container {

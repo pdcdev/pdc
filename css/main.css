@@ -134,7 +134,6 @@ section {
 
 .clearbg {
   background-color: transparent;
-  text-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   /*hover*/ }
   @media screen and (max-width: 768px) {
     .clearbg.active a.nav_btn:after {
