@@ -1465,7 +1465,8 @@ section {
         &.light_arrow {
             color: rgba(#fff, .2);
             &:hover {
-                color: rgba(#fff, 1);
+                /*color: rgba(#fff, 1);*/
+                color: $hover-color;
             }
         }
         &.dark_arrow {

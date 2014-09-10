@@ -1794,7 +1794,8 @@ section {
     .more_arrow i.light_arrow {
       color: rgba(255, 255, 255, 0.2); }
       .more_arrow i.light_arrow:hover {
-        color: white; }
+        /*color: rgba(#fff, 1);*/
+        color: #00aeef; }
     .more_arrow i.dark_arrow {
       color: rgba(0, 0, 0, 0.2); }
       .more_arrow i.dark_arrow:hover {
