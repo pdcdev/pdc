@@ -8,7 +8,7 @@
                 </div>
                 <article class="footer_contact">
                     <address>
-                        <p>330 West 38th Street 
+                        <p>330 West 38th Street <br />
                             Suite 1005 <br />
                             New York <br />
                             New York 10018 </p>
