@@ -3,7 +3,7 @@
             <div>
 
                 <div class="footer_name">
-                    <h4>Piscatello Design Centre</h4>
+                    <h4><a href="<?php echo home_url(); ?>">Piscatello Design Centre</a></h4>
                     <p class="phrase"></p>
                 </div>
                 <article class="footer_contact">
