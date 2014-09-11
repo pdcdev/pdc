@@ -14,6 +14,7 @@ $mob:  30px;
 $light-gray:  rgba(243, 244, 244, 1);
 $medium-gray: rgba(179, 185, 186, 1);
 $dark-gray:   rgba(179, 185, 186, 1);
+$darkest-gray: #7C7F80;
 
 $bg-gray: $light-gray;
 
@@ -219,7 +220,6 @@ section {
 }
 .clearbg {
     background-color: transparent;
-    text-shadow: 0 0 40px rgba(#000, .2);
     &.active {
         @include media($tablet) {
             .nav_container {
@@ -1147,6 +1147,95 @@ section.goto {
         }
     }
 }
+.more_projects {
+    @include pad(6em 0);
+    h3 {
+        text-align: center;
+        font-family: $rotisSemiSansExtraBold;
+        font-size: 1.75em;
+        color: $medium-gray;
+    }
+}
+.projects_section_tiny {
+    margin-top: $desk;
+    @include pad(0 $desk);
+    @include media($tablet) {
+        @include pad($tab);
+    }
+    .projects_container {
+        article.project_thumb {
+            opacity: 0;
+            @include span-columns(4);
+            @include omega(4n);
+            margin-bottom: 3em;
+            @include media($tablet) {
+                @include span-columns(4);
+                @include omega(2n);
+                margin-bottom: 3em;
+            }
+            @include media($mobile) {
+                @include span-columns(4);
+                margin: 0;
+            }
+            .image_box {
+                .swapper {
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        @include transition (all .4s ease-in-out);
+                        &:nth-of-type(1) {
+                            @include transform(scale(1));
+                            top: 0;
+                        }
+                        /*&:nth-of-type(2) {
+                            position: absolute;
+                            opacity: 0;
+                            top: 0;
+                            @include transform(scale(1.05));
+                        }*/
+                    }
+                }
+                .project_label {
+                    position: relative;
+                    background-color: $bg-gray;
+                    @include pad(.5em 0 0 0);
+                    @include media($mobile) {
+                        @include pad(.5em 0 2em 0);
+                    }
+                    .project_title {
+                        @include transition (all .3s ease-in-out);
+                        font-family: $rotisSemiSansExtraBold;
+                        @include type($small, $dark-gray, 1.25em);
+                    }
+                    .caption {
+                        @include transition (all .3s ease-in-out);
+                        @include type($small, $medium-gray, 1.25em);
+                    }
+                }
+            }
+            &:hover {
+                .image_box {
+                    img {
+                        &:nth-of-type(1) {
+                            @include transform(scale(1.1));
+                        }
+                    }
+                    .project_label {
+                        .project_title {
+                            color: #000;
+                        }
+                        .caption {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 #map-canvas {
     height: 800px;
     width: 100%; 
@@ -1479,17 +1568,15 @@ section {
     }
 }
 .internal_btn {
-    @include pad(6em 0);
+    @include pad(3em 0 6em 0);
     @include shift(8);
-    @include media($mobile) {
-        @include shift(0);
-    }
-            
+
     a {
         @include pad(1em 1.25em 1em 1.10em);
+        display: table;
+        text-align: center;
         border: 1px solid #000;
         color: #000;
-        display: inline-block;
         font-family: $rotisSemiSansExtraBold;
         @include transition (all .3s ease-in-out);
         @include media($mobile) {

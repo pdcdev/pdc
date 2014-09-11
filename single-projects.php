@@ -186,10 +186,48 @@
 
 <?php endif; ?>
 
-<aside>
+<!-- <aside>
     <div class="internal_btn">
         <a href="<?php echo get_permalink(5); ?>"><i class="icon-arrow_left"></i>Back To Projects</a>
     </div>
-</aside>
+</aside> -->
 
+<div class="gray_container">
+    <section class="projects_section_tiny">
+        <div class="more_projects">
+            <h3>More Projects</h3>
+        </div>
+        <?php
+            $args = array(
+                'post_type' => 'projects'
+            );
+            $the_query = new WP_Query( $args );
+        ?>
+
+        <?php if ( have_posts() ) : ?>
+        <aside class="projects_container">
+            <div>
+                <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                <article class="project_thumb">
+                    <div class="image_box">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="swapper">
+                                <?php if(get_field("cover_image")) : ?><img src="<?php get_image( get_field("cover_image"), "half"); ?>"><?php endif; ?>
+                            </div>
+                            <div class="project_label">
+                                <p class="project_title"><?php the_title(); ?></p>
+                                
+                            </div>
+                        </a> <!-- the permalink -->
+                    </div>
+                </article>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            </div>
+        </aside>
+    </section>
+    <div class="internal_btn">
+        <a href="<?php echo get_permalink(5); ?>"><i class="icon-arrow_left"></i>Back To Projects</a>
+    </div>
+</div>
 <?php get_footer(); ?>
