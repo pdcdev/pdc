@@ -1859,16 +1859,18 @@ section {
   height: 0;
   clear: both; }
 
-.cover_image.horizontal {
-  display: block; }
-  @media screen and (max-width: 768px) {
-    .cover_image.horizontal {
-      display: none; } }
-.cover_image.vertical {
-  display: none; }
-  @media screen and (max-width: 768px) {
-    .cover_image.vertical {
-      display: block; } }
+.cover_image {
+  height: 100%; }
+  .cover_image.horizontal {
+    display: block; }
+    @media screen and (max-width: 768px) {
+      .cover_image.horizontal {
+        display: none; } }
+  .cover_image.vertical {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .cover_image.vertical {
+        display: block; } }
 
 .module_video {
   display: block;

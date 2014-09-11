@@ -4,11 +4,11 @@
 
     <?php if( get_field("cover_image") ) : ?>
         <?php if(get_field("cover_image")) : ?>
-        <div class="cover_image fullheight horizontal" style="background-image:url('<?php get_image( get_field('cover_image'), "cover_nocrop"); ?>');">
+        <div class="cover_image horizontal" style="background-image:url('<?php get_image( get_field('cover_image'), "cover_nocrop"); ?>');">
         </div>
         <?php endif; ?>
         <?php if(get_field("cover_image_vertical")) : ?>
-        <div class="cover_image fullheight vertical" style="background-image:url('<?php get_image( get_field('cover_image_vertical'), "full"); ?>');">
+        <div class="cover_image vertical" style="background-image:url('<?php get_image( get_field('cover_image_vertical'), "full"); ?>');">
         </div>
         <?php endif; ?>
         <div class="more_arrow">
