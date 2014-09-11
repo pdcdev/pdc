@@ -1,8 +1,18 @@
 <?php get_header(); ?>
+    <div class="home_cover">
+        <div class="vertical_center_parent">
+            <div class="message vertical_center">
+                <!-- <p>Design changes everything</p> -->
+            </div>
+            <div class="divhelper"></div>
+        </div>
+    </div>
 
-<?php
+    <div class="float_gist">
+        <p>We partner with our clients to set the vision and strategy needed to deliver brand experiences that engage their audiences.</p>
+    </div>
 
-if( get_field('home_featured') ): ?>
+<?php if( get_field('home_featured') ): ?>
     <div class="home_featured" style="opacity:0">
         <div class="projects_container flexslider">
             <ul class="slides">
@@ -39,7 +49,8 @@ if( get_field('home_featured') ): ?>
     </div>
 <?php endif; ?>
 
-    <aside class="home_gist">
+
+   <!--  <aside class="home_gist">
         <div class="gist_inner">
             <h3>Welcome to <br /> Piscatello Design Centre</h3>
             <p>We partner with our clients to set the vision and strategy required to design and deliver brand experiences that truly engage their audiences.</p>
@@ -71,7 +82,7 @@ if( get_field('home_featured') ): ?>
                 </div>
             </a>
         </article>
-    </section>
+    </section> 
     <aside class="quote">
         <div>
             <?php
@@ -84,6 +95,7 @@ if( get_field('home_featured') ): ?>
             <p class="attr">&mdash;<?php echo $rand_row_attribution; ?></p>
         </div>
     </aside>
+    -->
     <div class="clients_wrapper graybg">
         <aside class="clients">
             <?php $i = 0; while( $i < 16 ) : ?>

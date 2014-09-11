@@ -86,10 +86,10 @@
         <?php if( get_row_layout() == 'project_double' ): ?>
             <figure class="project_double">
                 <?php if(get_sub_field('double_left')) : ?>
-                    <img src="<?php get_image( get_sub_field('double_left'), "half_nocrop" ); ?>" />
+                    <img src="<?php get_image( get_sub_field('double_left'), "cover_nocrop" ); ?>" />
                 <?php endif; ?>
                 <?php if(get_sub_field('double_right')) : ?>
-                    <img src="<?php get_image( get_sub_field('double_right'), "half_nocrop" ); ?>" />
+                    <img src="<?php get_image( get_sub_field('double_right'), "cover_nocrop" ); ?>" />
                 <?php endif; ?>
             </figure>
         <?php endif; ?>
