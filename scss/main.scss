@@ -1085,7 +1085,7 @@ section.goto {
             }
             @include media($mobile) {
                 @include span-columns(4);
-                margin: 0;
+                margin-bottom: 0;
             }
             .image_box {
                 .swapper {
@@ -1160,7 +1160,7 @@ section.goto {
     margin-top: $desk;
     @include pad(0 $desk);
     @include media($tablet) {
-        @include pad($tab);
+        @include pad(0 $tab);
     }
     .projects_container {
         article.project_thumb {
@@ -1568,15 +1568,16 @@ section {
     }
 }
 .internal_btn {
-    @include pad(3em 0 6em 0);
+    @include pad(6em 0);
     @include shift(8);
-
+    @include media($mobile) {
+        @include shift(0);
+    }
     a {
         @include pad(1em 1.25em 1em 1.10em);
-        display: table;
-        text-align: center;
         border: 1px solid #000;
         color: #000;
+        display: inline-block;
         font-family: $rotisSemiSansExtraBold;
         @include transition (all .3s ease-in-out);
         @include media($mobile) {
