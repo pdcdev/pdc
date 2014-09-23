@@ -27,6 +27,7 @@ get_header(); ?>
                 <article class="narrative">
                     <h3 class="title">New York</h3>
                     <div class="text">
+                        <p>For all general inquiries, career opportunities, internships, lectures, press information, etc. please email us at:</p>
                         <dl>
                             <!-- <dt>General</dt> -->
                                 <dd><a class="hover" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;">&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;</a></dd>
