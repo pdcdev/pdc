@@ -45,40 +45,7 @@
             </div>
         </article>
     </section>
-<!--     <section class="project_bar_graph">
-        <p class="bar_title">Average Time Spent On Website</p>
-        <div class="bar_row">
-            <div class="bar" data-value="desktop">
-                <div class="prev_value" data-value="3:42"><div class="row_title"></div></div>
-                <div class="new_value" data-value="6:50"><div class="change_value"></div></div>
-            </div>
-        </div>
-        <div class="bar_row">
-            <div class="bar" data-value="tablet">
-                <div class="prev_value" data-value="1:53"><div class="row_title"></div></div>
-                <div class="new_value" data-value="4:38"><div class="change_value"></div></div>
-            </div>
-        </div>
-        <div class="bar_row">
-            <div class="bar" data-value="mobile">
-                <div class="prev_value" data-value="00:39"><div class="row_title"></div></div>
-                <div class="new_value" data-value="2:41"><div class="change_value"></div></div>
-            </div>
-        </div>
-    </section> -->
 
-<!--     <section class="project_stats">
-        <div class="stat_pages square">
-            PROJECT STATS
-            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
-            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
-            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
-            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
-        </div>
-        <div>
-
-        </div>
-    </section> -->
     <?php if( have_rows('project_layout') ): ?>
 
     <?php while ( have_rows('project_layout') ) : the_row(); ?>
