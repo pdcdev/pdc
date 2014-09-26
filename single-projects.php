@@ -45,7 +45,40 @@
             </div>
         </article>
     </section>
+<!--     <section class="project_bar_graph">
+        <p class="bar_title">Average Time Spent On Website</p>
+        <div class="bar_row">
+            <div class="bar" data-value="desktop">
+                <div class="prev_value" data-value="3:42"><div class="row_title"></div></div>
+                <div class="new_value" data-value="6:50"><div class="change_value"></div></div>
+            </div>
+        </div>
+        <div class="bar_row">
+            <div class="bar" data-value="tablet">
+                <div class="prev_value" data-value="1:53"><div class="row_title"></div></div>
+                <div class="new_value" data-value="4:38"><div class="change_value"></div></div>
+            </div>
+        </div>
+        <div class="bar_row">
+            <div class="bar" data-value="mobile">
+                <div class="prev_value" data-value="00:39"><div class="row_title"></div></div>
+                <div class="new_value" data-value="2:41"><div class="change_value"></div></div>
+            </div>
+        </div>
+    </section> -->
 
+<!--     <section class="project_stats">
+        <div class="stat_pages square">
+            PROJECT STATS
+            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
+            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
+            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
+            <div class="window-image"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-browser.svg" /></div>
+        </div>
+        <div>
+
+        </div>
+    </section> -->
     <?php if( have_rows('project_layout') ): ?>
 
     <?php while ( have_rows('project_layout') ) : the_row(); ?>
@@ -162,6 +195,22 @@
         </section>
         <?php endif; ?>
 
+        <?php if( get_row_layout() == 'contrast_graph' ): ?>
+        <section class="project_bar_graph">
+            <p class="bar_title"><?php the_sub_field('graph_name'); ?></p>
+            <?php if ( have_rows('graph_rows') ) : ?>
+            <div class="bar_row">
+                <?php while ( have_rows('graph_rows') ) : the_row(); ?>
+                <div class="bar" data-value="<?php the_sub_field("row_title"); ?>">
+                    <div class="prev_value" data-value="<?php the_sub_field("time_a"); ?>"><div class="row_title"></div></div>
+                    <div class="new_value" data-value="<?php the_sub_field("time_b"); ?>"><div class="change_value"></div></div>
+                </div>
+                <?php endwhile; ?>
+            </div>
+            <?php endif; ?>
+        </section>
+        <?php endif; ?>
+
         <?php if( get_row_layout() == 'quote' ): ?>
         <section class="project_quote">
             <div>
@@ -180,6 +229,7 @@
         <?php endif; ?>
 
         <?php endwhile; ?>
+
     <?php endif; ?>
         <!-- end modules --> 
     </div> <!-- project container -->
