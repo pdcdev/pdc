@@ -45,27 +45,27 @@
             </div>
         </article>
     </section>
-    <section class="project_bar_graph">
+<!--     <section class="project_bar_graph">
         <p class="bar_title">Average Time Spent On Website</p>
         <div class="bar_row">
-            <div class="bar">
-                <div class="prev_value" data-value="3:42"><div class="row_title">Desktop</div></div>
+            <div class="bar" data-value="desktop">
+                <div class="prev_value" data-value="3:42"><div class="row_title"></div></div>
                 <div class="new_value" data-value="6:50"><div class="change_value"></div></div>
             </div>
         </div>
         <div class="bar_row">
-            <div class="bar">
-                <div class="prev_value" data-value="1:53"><div class="row_title">Tablet</div></div>
+            <div class="bar" data-value="tablet">
+                <div class="prev_value" data-value="1:53"><div class="row_title"></div></div>
                 <div class="new_value" data-value="4:38"><div class="change_value"></div></div>
             </div>
         </div>
         <div class="bar_row">
-            <div class="bar">
-                <div class="prev_value" data-value="00:39"><div class="row_title">Mobile</div></div>
+            <div class="bar" data-value="mobile">
+                <div class="prev_value" data-value="00:39"><div class="row_title"></div></div>
                 <div class="new_value" data-value="2:41"><div class="change_value"></div></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 <!--     <section class="project_stats">
         <div class="stat_pages square">
@@ -192,6 +192,22 @@
             <div>
                 <p><a href="<?php the_sub_field('website_url'); ?>" target="_blank">View Website<i class="icon-arrow_right"></i></a></p>
             </div>
+        </section>
+        <?php endif; ?>
+
+        <?php if( get_row_layout() == 'contrast_graph' ): ?>
+        <section class="project_bar_graph">
+            <p class="bar_title"><?php the_sub_field('graph_name'); ?></p>
+            <?php if ( have_rows('graph_rows') ) : ?>
+            <div class="bar_row">
+                <?php while ( have_rows('graph_rows') ) : the_row(); ?>
+                <div class="bar" data-value="<?php the_sub_field("row_title"); ?>">
+                    <div class="prev_value" data-value="<?php the_sub_field("time_a"); ?>"><div class="row_title"></div></div>
+                    <div class="new_value" data-value="<?php the_sub_field("time_b"); ?>"><div class="change_value"></div></div>
+                </div>
+                <?php endwhile; ?>
+            </div>
+            <?php endif; ?>
         </section>
         <?php endif; ?>
 
