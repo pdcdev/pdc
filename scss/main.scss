@@ -1822,6 +1822,100 @@ section {
             }
         }
     }
+    .project_bar_graph {
+        .bar_title {
+            text-align: center;
+            font-family: $rotisSemiSansExtraBold;
+            /*@include type($medium, #000, 1.2em);*/
+            font-size: 1.5em;
+            @include pad(2em 0);
+        }
+        div.bar_row {
+            height: 100px;
+            .bar {
+                margin: 0 auto;
+                width: 80%;
+                height: 100%;
+                @include media($mobile) {
+                    margin: 0;
+                }
+                .prev_value, .new_value {
+                    float: left;
+                }
+                .prev_value {
+                    .row_title {
+                        float: left;
+                        text-align: right;
+                        @include transform(translateX(-4em));
+                        @include media($mobile) {
+                            @include transform(translateY(-1.5em));
+                        }
+                        @include pad(0 .5em 0 0);
+                        @include type($medium, $medium-gray, 1.2em);       
+                    }
+                    height: 1.5em;
+                    background-color: #000;
+                }
+                .new_value {
+                    height: 1.5em;
+                    background-color: $hover-color;
+                    .change_value {
+                        @include transform(translateY(-1em));
+                        text-align: right;
+                        font-size: 2em;
+                        font-family: $rotisSemiSansExtraBold;
+                        @include media($mobile) {
+                            font-size: 1.5em;
+                            font-family: $rotisSemiSansExtraBold;
+                            @include transform(translateX(2.75em));
+                        }
+                                
+                    }
+                }
+            }
+        }
+    }
+    .project_stats {
+        @include clearfix;
+        .stat_pages {
+            @include clearfix;
+            @include span-columns(8);
+            .window-image {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                &:nth-of-type(1) {
+                    height: 13px;
+                    opacity: .8;
+                    img {
+                        width: 30%;
+                    }
+                }
+                &:nth-of-type(2) {
+                    height: 16px;
+                    opacity: .8;
+                    img {
+                        width: 40%;
+                    }
+                }
+                &:nth-of-type(3) {
+                    height: 18px;
+                    opacity: .8;
+                    img {
+                        width: 50%;
+                    }
+                }
+                &:nth-of-type(4) {
+                    height: 5em;
+                    opacity: .99;
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
 }
 .jobs {
     article {
