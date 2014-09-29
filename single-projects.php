@@ -45,6 +45,30 @@
             </div>
         </article>
     </section>
+    <section class="project_stats">
+        <div class="stat_pages">
+            <div class="page_views">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-4.jpg">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-3.jpg">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-2.jpg">
+                <div class="figure">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-1.jpg">
+                    <p>
+                        <span class="number" data-value="24"></span>
+                        <br/>
+                        <span class="label">increase in page views</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="stat_speed">
+            <div class="site_speed">
+                <p>2x</p>
+            </div>
+            <p class="label">increase in website speed</p>
+        </div>
+    </section>
 
     <?php if( have_rows('project_layout') ): ?>
 
@@ -202,12 +226,6 @@
     </div> <!-- project container -->
 
 <?php endif; ?>
-
-<!-- <aside>
-    <div class="internal_btn">
-        <a href="<?php echo get_permalink(5); ?>"><i class="icon-arrow_left"></i>Back To Projects</a>
-    </div>
-</aside> -->
 
 <div class="gray_container">
     <section class="projects_section_tiny">

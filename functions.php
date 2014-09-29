@@ -33,10 +33,12 @@ function theme_js() {
     wp_register_script( 'studio', get_template_directory_uri() . '/js/studio.js', array('jquery'), '', true );
     wp_register_script( 'contact', get_template_directory_uri() . '/js/contact.js', array('jquery'), '', true );
     wp_register_script( 'single-project', get_template_directory_uri() . '/js/single-project.js', array('jquery'), '', true );
+    wp_register_script( 'stats-generator', get_template_directory_uri() . '/js/stats-generator.js', array('jquery'), '', true );
     wp_register_script( 'stats-animator', get_template_directory_uri() . '/js/stats-animator.js', array('jquery'), '', true );
     
     if( is_single() ) {
         wp_enqueue_script( 'single-project' );
+        wp_enqueue_script( 'stats-generator' );
         wp_enqueue_script( 'stats-animator' );
     }
     if( is_page('home') || is_page('test') ) {

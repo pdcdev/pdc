@@ -2318,11 +2318,13 @@ section {
     .project .project_bar_graph div.bar_row .bar {
       height: 100%; }
       .project .project_bar_graph div.bar_row .bar .prev_value, .project .project_bar_graph div.bar_row .bar .new_value {
-        float: left; }
+        float: left;
+        opacity: 0; }
       .project .project_bar_graph div.bar_row .bar .prev_value {
         height: 1.5em;
         background-color: #000; }
         .project .project_bar_graph div.bar_row .bar .prev_value .row_title {
+          opacity: 0;
           text-transform: capitalize;
           float: left;
           text-align: right;
@@ -2345,6 +2347,7 @@ section {
         height: 1.5em;
         background-color: #00aeef; }
         .project .project_bar_graph div.bar_row .bar .new_value .change_value {
+          opacity: 0;
           -webkit-transform: translateY(-1em);
           -moz-transform: translateY(-1em);
           -ms-transform: translateY(-1em);
@@ -2362,49 +2365,75 @@ section {
               transform: translateY(-1.25em);
               font-size: 1.5em;
               font-family: "RotisSemiSansW01-ExtraB"; } }
-  .project .project_stats {
-    *zoom: 1; }
-    .project .project_stats:before, .project .project_stats:after {
-      content: " ";
-      display: table; }
-    .project .project_stats:after {
-      clear: both; }
-    .project .project_stats .stat_pages {
-      *zoom: 1;
-      display: block;
-      float: left;
-      margin-right: 1.7341%;
-      width: 49.13295%; }
-      .project .project_stats .stat_pages:before, .project .project_stats .stat_pages:after {
-        content: " ";
-        display: table; }
-      .project .project_stats .stat_pages:after {
-        clear: both; }
-      .project .project_stats .stat_pages:last-child {
-        margin-right: 0; }
-      .project .project_stats .stat_pages .window-image img {
+  .project .project_stats .stat_speed, .project .project_stats .stat_pages {
+    display: block;
+    float: left;
+    margin-right: 1.7341%;
+    width: 49.13295%; }
+    .project .project_stats .stat_speed:last-child, .project .project_stats .stat_pages:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .project .project_stats .stat_speed, .project .project_stats .stat_pages {
+        display: block;
+        float: left;
+        margin-right: 3.52941%;
+        width: 48.23529%; }
+        .project .project_stats .stat_speed:last-child, .project .project_stats .stat_pages:last-child {
+          margin-right: 0; } }
+  .project .project_stats .stat_speed {
+    display: block;
+    float: left;
+    margin-right: 1.7341%;
+    width: 49.13295%; }
+    .project .project_stats .stat_speed:last-child {
+      margin-right: 0; }
+    .project .project_stats .stat_speed .site_speed {
+      margin: 0 auto;
+      background-color: #000;
+      width: 250px;
+      height: 250px;
+      line-height: 240px;
+      border-radius: 500px; }
+      .project .project_stats .stat_speed .site_speed p {
+        text-align: center;
+        font-size: 7em;
+        font-family: "RotisSemiSansW01-ExtraB";
+        color: #fff; }
+    .project .project_stats .stat_speed p.label {
+      padding: 1em 0;
+      text-align: center;
+      font-size: 1.5em;
+      font-family: "RotisSemiSansW01-ExtraB"; }
+  .project .project_stats .stat_pages {
+    display: block;
+    float: left;
+    margin-right: 1.7341%;
+    width: 49.13295%; }
+    .project .project_stats .stat_pages:last-child {
+      margin-right: 0; }
+    .project .project_stats .stat_pages .page_views {
+      position: relative; }
+      .project .project_stats .stat_pages .page_views > img {
+        opacity: 0;
+        width: 60%;
         display: block;
         margin: 0 auto; }
-      .project .project_stats .stat_pages .window-image:nth-of-type(1) {
-        height: 13px;
-        opacity: .8; }
-        .project .project_stats .stat_pages .window-image:nth-of-type(1) img {
-          width: 30%; }
-      .project .project_stats .stat_pages .window-image:nth-of-type(2) {
-        height: 16px;
-        opacity: .8; }
-        .project .project_stats .stat_pages .window-image:nth-of-type(2) img {
-          width: 40%; }
-      .project .project_stats .stat_pages .window-image:nth-of-type(3) {
-        height: 18px;
-        opacity: .8; }
-        .project .project_stats .stat_pages .window-image:nth-of-type(3) img {
-          width: 50%; }
-      .project .project_stats .stat_pages .window-image:nth-of-type(4) {
-        height: 5em;
-        opacity: .99; }
-        .project .project_stats .stat_pages .window-image:nth-of-type(4) img {
-          width: 60%; }
+      .project .project_stats .stat_pages .page_views .figure {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-family: "RotisSemiSansW01-ExtraB"; }
+        .project .project_stats .stat_pages .page_views .figure img {
+          width: 60%;
+          margin: 0 auto; }
+        .project .project_stats .stat_pages .page_views .figure p {
+          top: 40%;
+          width: 100%;
+          position: absolute; }
+          .project .project_stats .stat_pages .page_views .figure p span.number {
+            font-size: 5em; }
+          .project .project_stats .stat_pages .page_views .figure p span.label {
+            font-size: 1.5em; }
 
 .jobs article {
   *zoom: 1; }
