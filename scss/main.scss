@@ -1823,6 +1823,13 @@ section {
         }
     }
     .project_bar_graph {
+        @include pad(0 $desk 10em $desk);
+        @include media($tablet) {
+            @include pad(0 $desk 6em $desk);
+        }
+        @include media($mobile) {
+            @include pad(0 $desk 3em $desk);
+        }
         .bar_title {
             text-align: center;
             font-family: $rotisSemiSansExtraBold;
