@@ -1889,7 +1889,7 @@ section {
         }
     }
     section.project_stats {
-        @include pad(10em $desk 2.5em $desk);
+        @include pad(10em $desk 8em $desk);
         @include media($tablet) {
             @include pad(6em $tab 1.5em $tab);
         }
@@ -1918,6 +1918,12 @@ section {
                 height: 300px;
                 line-height: 290px;
                 border-radius: 500px;
+                @include media($mobile) {
+                    width: 250px;
+                    height: 250px;
+                    line-height: 240px;
+                }
+                        
                 p {
                     text-align: center;
                     font-size: 7em;
@@ -1974,11 +1980,19 @@ section {
                         span.number {
                             font-size: 6em;
                             @include pad(0 0 .25em 0);
+                            @include media($mobile) {
+                                font-size: 6em;
+                                @include pad(0 0 .1em 0);
+                            }
                                     
                         }
                         span.label {
                             font-size: 1.5em;
                             opacity: 0;
+                            @include media($mobile) {
+                                font-size: 1em;
+                            }
+                                    
                         }
                     }
 

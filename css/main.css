@@ -2378,7 +2378,7 @@ section {
                 font-size: 1.5em;
                 font-family: "RotisSemiSansW01-ExtraB"; } }
   .project section.project_stats {
-    padding: 10em 40px 2.5em 40px; }
+    padding: 10em 40px 8em 40px; }
     @media screen and (max-width: 768px) {
       .project section.project_stats {
         padding: 6em 40px 1.5em 40px; } }
@@ -2425,6 +2425,11 @@ section {
         height: 300px;
         line-height: 290px;
         border-radius: 500px; }
+        @media screen and (max-width: 480px) {
+          .project section.project_stats .stat_speed .site_speed {
+            width: 250px;
+            height: 250px;
+            line-height: 240px; } }
         .project section.project_stats .stat_speed .site_speed p {
           text-align: center;
           font-size: 7em;
@@ -2482,9 +2487,16 @@ section {
             .project section.project_stats .stat_pages .page_views .figure p span.number {
               font-size: 6em;
               padding: 0 0 0.25em 0; }
+              @media screen and (max-width: 480px) {
+                .project section.project_stats .stat_pages .page_views .figure p span.number {
+                  font-size: 6em;
+                  padding: 0 0 0.1em 0; } }
             .project section.project_stats .stat_pages .page_views .figure p span.label {
               font-size: 1.5em;
               opacity: 0; }
+              @media screen and (max-width: 480px) {
+                .project section.project_stats .stat_pages .page_views .figure p span.label {
+                  font-size: 1em; } }
 
 .jobs article {
   *zoom: 1; }
