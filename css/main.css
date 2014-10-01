@@ -2117,6 +2117,7 @@ section {
           padding: 0 0 1.7341% 0; } }
   .project .project_subsection_header {
     padding: 0 40px 10em 40px;
+    opacity: 0;
     margin-top: 14em; }
     @media screen and (max-width: 480px) {
       .project .project_subsection_header {
@@ -2300,13 +2301,16 @@ section {
         .project .image_grid > div .image_grid_item:nth-child(2n+1) {
           clear: left; } }
   .project .project_bar_graph .bar_title {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
     text-align: center;
     font-family: "RotisSemiSansW01-ExtraB";
     font-size: 1.5em;
-    padding: 2em 0; }
-    @media screen and (max-width: 480px) {
-      .project .project_bar_graph .bar_title {
-        font-size: 1.25em; } }
+    padding: 0 0 3em 0; }
+    .project .project_bar_graph .bar_title.visible {
+      opacity: 1; }
   .project .project_bar_graph div.bar_row {
     height: 100px;
     margin: 0 auto;
@@ -2365,75 +2369,114 @@ section {
               transform: translateY(-1.25em);
               font-size: 1.5em;
               font-family: "RotisSemiSansW01-ExtraB"; } }
-  .project .project_stats .stat_speed, .project .project_stats .stat_pages {
-    display: block;
-    float: left;
-    margin-right: 1.7341%;
-    width: 49.13295%; }
-    .project .project_stats .stat_speed:last-child, .project .project_stats .stat_pages:last-child {
-      margin-right: 0; }
+  .project section.project_stats {
+    padding: 10em 40px 2.5em 40px; }
     @media screen and (max-width: 768px) {
-      .project .project_stats .stat_speed, .project .project_stats .stat_pages {
-        display: block;
-        float: left;
-        margin-right: 3.52941%;
-        width: 48.23529%; }
-        .project .project_stats .stat_speed:last-child, .project .project_stats .stat_pages:last-child {
-          margin-right: 0; } }
-  .project .project_stats .stat_speed {
-    display: block;
-    float: left;
-    margin-right: 1.7341%;
-    width: 49.13295%; }
-    .project .project_stats .stat_speed:last-child {
-      margin-right: 0; }
-    .project .project_stats .stat_speed .site_speed {
-      margin: 0 auto;
-      background-color: #000;
-      width: 250px;
-      height: 250px;
-      line-height: 240px;
-      border-radius: 500px; }
-      .project .project_stats .stat_speed .site_speed p {
-        text-align: center;
-        font-size: 7em;
-        font-family: "RotisSemiSansW01-ExtraB";
-        color: #fff; }
-    .project .project_stats .stat_speed p.label {
-      padding: 1em 0;
-      text-align: center;
-      font-size: 1.5em;
-      font-family: "RotisSemiSansW01-ExtraB"; }
-  .project .project_stats .stat_pages {
-    display: block;
-    float: left;
-    margin-right: 1.7341%;
-    width: 49.13295%; }
-    .project .project_stats .stat_pages:last-child {
-      margin-right: 0; }
-    .project .project_stats .stat_pages .page_views {
-      position: relative; }
-      .project .project_stats .stat_pages .page_views > img {
-        opacity: 0;
-        width: 60%;
-        display: block;
-        margin: 0 auto; }
-      .project .project_stats .stat_pages .page_views .figure {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        font-family: "RotisSemiSansW01-ExtraB"; }
-        .project .project_stats .stat_pages .page_views .figure img {
-          width: 60%;
-          margin: 0 auto; }
-        .project .project_stats .stat_pages .page_views .figure p {
-          top: 40%;
+      .project section.project_stats {
+        padding: 6em 40px 1.5em 40px; } }
+    @media screen and (max-width: 480px) {
+      .project section.project_stats {
+        padding: 3em 30px 0.75em 30px; } }
+    .project section.project_stats .stat_speed, .project section.project_stats .stat_pages {
+      display: block;
+      float: left;
+      margin-right: 1.7341%;
+      width: 49.13295%; }
+      .project section.project_stats .stat_speed:last-child, .project section.project_stats .stat_pages:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        .project section.project_stats .stat_speed, .project section.project_stats .stat_pages {
+          display: block;
+          float: left;
+          margin-right: 3.52941%;
           width: 100%;
-          position: absolute; }
-          .project .project_stats .stat_pages .page_views .figure p span.number {
-            font-size: 5em; }
-          .project .project_stats .stat_pages .page_views .figure p span.label {
-            font-size: 1.5em; }
+          padding: 0 0 6em 0; }
+          .project section.project_stats .stat_speed:last-child, .project section.project_stats .stat_pages:last-child {
+            margin-right: 0; } }
+    .project section.project_stats .stat_speed {
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      transform: scale(0.5);
+      opacity: 0;
+      -webkit-transition: all 0.4s cubic-bezier(0.145, 1.65, 0.375, 0.8);
+      -moz-transition: all 0.4s cubic-bezier(0.145, 1.65, 0.375, 0.8);
+      transition: all 0.4s cubic-bezier(0.145, 1.65, 0.375, 0.8); }
+      .project section.project_stats .stat_speed.scale_it {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+      .project section.project_stats .stat_speed .site_speed {
+        margin: 0 auto;
+        background-color: #000;
+        width: 300px;
+        height: 300px;
+        line-height: 290px;
+        border-radius: 500px; }
+        .project section.project_stats .stat_speed .site_speed p {
+          text-align: center;
+          font-size: 7em;
+          font-family: "RotisSemiSansW01-ExtraB";
+          color: #fff; }
+      .project section.project_stats .stat_speed p.label {
+        padding: 1em 0;
+        text-align: center;
+        font-size: 1.5em;
+        font-family: "RotisSemiSansW01-ExtraB"; }
+    .project section.project_stats .stat_pages {
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+      transform: scale(0.9);
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      .project section.project_stats .stat_pages.scale_it {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+      .project section.project_stats .stat_pages .page_views {
+        position: relative; }
+        .project section.project_stats .stat_pages .page_views > img {
+          opacity: 0;
+          width: 400px;
+          display: block;
+          margin: 0 auto; }
+          @media screen and (max-width: 768px) {
+            .project section.project_stats .stat_pages .page_views > img {
+              width: 400px; } }
+          @media screen and (max-width: 480px) {
+            .project section.project_stats .stat_pages .page_views > img {
+              width: 400px; } }
+        .project section.project_stats .stat_pages .page_views .figure {
+          position: relative;
+          width: 100%;
+          text-align: center;
+          font-family: "RotisSemiSansW01-ExtraB"; }
+          .project section.project_stats .stat_pages .page_views .figure img {
+            width: 400px;
+            margin: 0 auto; }
+          .project section.project_stats .stat_pages .page_views .figure p {
+            top: 40%;
+            width: 100%;
+            position: absolute; }
+            .project section.project_stats .stat_pages .page_views .figure p span {
+              display: block; }
+            .project section.project_stats .stat_pages .page_views .figure p span.number {
+              font-size: 6em;
+              padding: 0 0 0.25em 0; }
+            .project section.project_stats .stat_pages .page_views .figure p span.label {
+              font-size: 1.5em;
+              opacity: 0; }
 
 .jobs article {
   *zoom: 1; }

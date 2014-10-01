@@ -45,30 +45,6 @@
             </div>
         </article>
     </section>
-    <section class="project_stats">
-        <div class="stat_pages">
-            <div class="page_views">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-4.jpg">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-3.jpg">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-2.jpg">
-                <div class="figure">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-1.jpg">
-                    <p>
-                        <span class="number" data-value="24"></span>
-                        <br/>
-                        <span class="label">increase in page views</span>
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="stat_speed">
-            <div class="site_speed">
-                <p>2x</p>
-            </div>
-            <p class="label">increase in website speed</p>
-        </div>
-    </section>
 
     <?php if( have_rows('project_layout') ): ?>
 
@@ -193,12 +169,38 @@
             <div class="bar_row">
                 <?php while ( have_rows('graph_rows') ) : the_row(); ?>
                 <div class="bar" data-value="<?php the_sub_field("row_title"); ?>">
-                    <div class="prev_value" data-value="<?php the_sub_field("time_a"); ?>"><div class="row_title"></div></div>
-                    <div class="new_value" data-value="<?php the_sub_field("time_b"); ?>"><div class="change_value"></div></div>
+                    <div class="prev_value" data-percent="" data-value="<?php the_sub_field("time_a"); ?>"><div class="row_title"></div></div>
+                    <div class="new_value" data-percent="" data-value="<?php the_sub_field("time_b"); ?>"><div class="change_value"></div></div>
                 </div>
                 <?php endwhile; ?>
             </div>
             <?php endif; ?>
+        </section>
+        <?php endif; ?>
+
+        <?php if( get_row_layout() == 'engagement_info' ): ?>
+        <section class="project_stats">
+            <div class="stat_pages">
+                <div class="page_views">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-4.jpg">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-3.jpg">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-2.jpg">
+                    <div class="figure">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/stats-image/stats-browser-1.jpg">
+                        <p>
+                            <span class="number" data-value="<?php the_sub_field('engagement_value'); ?>"></span>
+                            <br/>
+                            <span class="label"><?php the_sub_field('engagement_title'); ?></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat_speed">
+                <div class="site_speed">
+                    <p><?php the_sub_field('speed_title_value'); ?></p>
+                </div>
+                <p class="label"><?php the_sub_field('speed_title'); ?></p>
+            </div>
         </section>
         <?php endif; ?>
 

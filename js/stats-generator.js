@@ -41,8 +41,8 @@ jQuery(document).ready(function($) {
     function append_values() {
         $.each(bar_graph_children, function(i){
             $(this).css("width", final_values[i][2]+"%");
-            $(this).find(".prev_value").css("width", final_values[i][0]+"%");
-            $(this).find(".new_value").css("width", final_values[i][1]+"%");
+            $(this).find(".prev_value").css("width", final_values[i][0]+"%").attr("data-percent", final_values[i][0]);
+            $(this).find(".new_value").css("width", final_values[i][1]+"%").attr("data-percent", final_values[i][1]);
             $(this).find(".change_value").text(final_values[i][3]);
             $(this).find(".row_title").text(final_values[i][4]);
         });

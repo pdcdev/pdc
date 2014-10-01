@@ -1701,6 +1701,7 @@ section {
     }
     .project_subsection_header {
         @include pad(0 $desk 10em $desk);
+        opacity: 0;
         margin-top: 14em;
         @include media($mobile) {
             @include pad(0 $mob 1em $mob);
@@ -1824,14 +1825,15 @@ section {
     }
     .project_bar_graph {
         .bar_title {
+            opacity: 0;
+            @include transition (all .3s ease-in);
+            &.visible {
+                opacity: 1;
+            }
             text-align: center;
             font-family: $rotisSemiSansExtraBold;
             font-size: 1.5em;
-            @include pad(2em 0);
-            @include media($mobile) {
-                font-size: 1.25em;
-            }
-                    
+            @include pad(0 0 3em 0);
         }
         div.bar_row {
             height: 100px;
@@ -1879,23 +1881,35 @@ section {
             }
         }
     }
-    .project_stats {
+    section.project_stats {
+        @include pad(10em $desk 2.5em $desk);
+        @include media($tablet) {
+            @include pad(6em $tab 1.5em $tab);
+        }
+        @include media($mobile) {
+            @include pad(3em $mob .75em $mob);
+        }
         .stat_speed, .stat_pages {
             @include span-columns(8);
             @include media($tablet) {
-                @include span-columns(4);
+                @include span-columns(8);
+                @include pad(0 0 6em 0);
             }
-                    
         }
-
         .stat_speed {
-            @include span-columns(8);
+            @include transform(scale(.5));
+            opacity: 0;
+            @include transition (all .4s cubic-bezier(0.145, 1.650, 0.375, 0.8));
+            &.scale_it {
+                @include transform(scale(1));
+                opacity: 1;
+            }
             .site_speed {
                 margin: 0 auto;
                 background-color: #000;
-                width: 250px;
-                height: 250px;
-                line-height: 240px;
+                width: 300px;
+                height: 300px;
+                line-height: 290px;
                 border-radius: 500px;
                 p {
                     text-align: center;
@@ -1912,14 +1926,26 @@ section {
             }
         }
         .stat_pages {
-            @include span-columns(8);
+            @include transform(scale(.9));
+            opacity: 0;
+            @include transition (all .3s ease-out);
+            &.scale_it {
+                @include transform(scale(1));
+                opacity: 1;
+            }
             .page_views {
                 position: relative;
                 > img {
                     opacity: 0;
-                    width: 60%;
+                    width: 400px;
                     display: block;
                     margin: 0 auto;
+                    @include media($tablet) {
+                        width: 400px;
+                    }
+                    @include media($mobile) {
+                        width: 400px;
+                    }
                 }
                 .figure {
                     position: relative;
@@ -1927,18 +1953,25 @@ section {
                     text-align: center;
                     font-family: $rotisSemiSansExtraBold;
                     img {
-                        width: 60%;
+                        width: 400px;
                         margin: 0 auto;
+
                     }
                     p {
                         top: 40%;
                         width: 100%;
                         position: absolute;
+                        span {
+                            display: block;
+                        }
                         span.number {
-                            font-size: 5em;
+                            font-size: 6em;
+                            @include pad(0 0 .25em 0);
+                                    
                         }
                         span.label {
                             font-size: 1.5em;
+                            opacity: 0;
                         }
                     }
 
