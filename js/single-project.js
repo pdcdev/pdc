@@ -18,4 +18,10 @@ jQuery(document).ready(function($) {
         }, 1000, "easeInOutQuint");
     }});
 
+    $(".project_subsection_header").each(function(){
+        $(this).waypoint(function(){
+            $(this).animate({opacity: 1}, 600, "easeOutSine");
+        }, {offset: '80%'});
+    });
+
 });
