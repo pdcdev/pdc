@@ -17,11 +17,10 @@ get_header(); ?>
                 </div>
             </article>
         </section>
-
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <aside class="map">
             <div id="map-canvas"></div>
         </aside>
-
         <!-- <div class="black_container"> -->
             <section class="address">
                 <article class="narrative">
