@@ -2,7 +2,7 @@
 @import "grid-settings";
 @import "neat/neat";
 
-$hover-color: #00aeef;
+$hover-color: #bdb061;
 $bg-gray: #eee;
 $bannerbg: #000;
 
@@ -952,9 +952,10 @@ aside.social {
             i {
                 font-size: 1.125em;
                 cursor: pointer;
+                color: $hover-color;
             }
             &:hover {
-                color: $hover-color;
+                color: #fff;
             }
         }
     }
@@ -2102,17 +2103,20 @@ section.studio_double {
                 @include media($tablet) {
                     @include span-columns(4 of 4);
                 }
-                        
                 @include media($mobile) {
                     @include span-columns(4);
                 }
-                color: $bg-gray;
+                /*color: $bg-gray;*/
                 ul {
                     li {
                         float: left;
                         @include pad(0 .5em 0 0);
                         a {
                             display: inline;
+                            color: $hover-color;
+                            &:hover {
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -2164,9 +2168,10 @@ section.studio_double {
                 i {
                     cursor: pointer;
                     @include transition (all .3s ease-in-out);
+                    color: $hover-color;
                 }
                 &:hover {
-                    color: $hover-color;
+                    color: #fff;
                 }
             }
         }
