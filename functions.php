@@ -29,7 +29,7 @@ function theme_js() {
     wp_register_script( 'flexslider', get_template_directory_uri() . '/js/flexslider.js', array('jquery'), '', true );
     wp_register_script( 'home', get_template_directory_uri() . '/js/home.js', array('jquery'), '', true );
     wp_register_script( 'map', get_template_directory_uri() . '/js/map.js', array('jquery','google_maps'), '', true );
-    // wp_register_script( 'google_maps','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false','', '', true );
+    wp_register_script( 'google_maps','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false','', '', true );
     wp_register_script( 'projects', get_template_directory_uri() . '/js/projects.js', array('jquery'), '', true );
     wp_register_script( 'studio', get_template_directory_uri() . '/js/studio.js', array('jquery'), '', true );
     wp_register_script( 'contact', get_template_directory_uri() . '/js/contact.js', array('jquery'), '', true );
