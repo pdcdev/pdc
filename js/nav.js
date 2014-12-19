@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     // construct an instance of Headroom, passing the element
     var headroom = new Headroom(elem, {
         "tolerance": 5,
-        "offset": project_from_top - 30,
+        "offset": -30,
         "classes": {
             "initial": "animated",
             "pinned": "slideDown",
