@@ -9,7 +9,7 @@ a.hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
   a.hover:hover {
-    color: #bdb061; }
+    color: #e71c37; }
 
 .sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, aside.quote, .project .website_link {
   padding: 0 40px; }
@@ -854,8 +854,8 @@ aside.side_gist {
                 padding: 0 0 0 0.5em;
                 vertical-align: middle; }
               .home_featured ul li .tintbg .project_label_container .project_label .goto_btn a:hover {
-                border: 1px solid #bdb061;
-                background-color: #bdb061;
+                border: 1px solid #e71c37;
+                background-color: #e71c37;
                 color: #fff; }
 
 .hidden {
@@ -1031,7 +1031,7 @@ aside.social ul {
     aside.social ul li i {
       font-size: 1.125em;
       cursor: pointer;
-      color: #bdb061; }
+      color: #e71c37; }
     aside.social ul li:hover {
       color: #fff; }
 
@@ -1910,12 +1910,12 @@ section {
       color: rgba(255, 255, 255, 0.2); }
       .more_arrow i.light_arrow:hover {
         /*color: rgba(#fff, 1);*/
-        color: #bdb061; }
+        color: #e71c37; }
     .more_arrow i.dark_arrow {
       color: rgba(0, 0, 0, 0.2); }
       .more_arrow i.dark_arrow:hover {
         /*color: rgba(#000, 1);*/
-        color: #bdb061; }
+        color: #e71c37; }
 
 .internal_btn {
   padding: 6em 0;
@@ -1939,8 +1939,8 @@ section {
     .internal_btn a i {
       padding: 0 0.75em 0 0; }
     .internal_btn a:hover {
-      border: 1px solid #bdb061;
-      background-color: #bdb061;
+      border: 1px solid #e71c37;
+      background-color: #e71c37;
       color: #fff; }
 
 .project {
@@ -2206,7 +2206,7 @@ section {
       .project .website_link > div p a i {
         padding: 0 0 0 0.75em; }
       .project .website_link > div p a:hover {
-        background-color: #bdb061;
+        background-color: #e71c37;
         color: #fff; }
   .project .project_quote div {
     display: block;
@@ -2358,7 +2358,7 @@ section {
                 font-size: 1em; } }
         .project .project_bar_graph div.bar_row .bar .new_value {
           height: 1.5em;
-          background-color: #bdb061; }
+          background-color: #e71c37; }
           .project .project_bar_graph div.bar_row .bar .new_value .change_value {
             opacity: 0;
             -webkit-transform: translateY(-1em);
@@ -2684,7 +2684,7 @@ section.studio_double div.double img:nth-of-type(2) {
           padding: 0 0.5em 0 0; }
           .footer_container footer .footer_contact .social ul li a {
             display: inline;
-            color: #bdb061; }
+            color: #e71c37; }
             .footer_container footer .footer_contact .social ul li a:hover {
               color: #fff; }
       .footer_container footer .footer_contact address {
@@ -2718,7 +2718,7 @@ section.studio_double div.double img:nth-of-type(2) {
         -moz-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
         .footer_container footer .footer_contact a:hover {
-          color: #bdb061; }
+          color: #e71c37; }
     .footer_container footer .footer_name {
       display: block;
       float: left;
@@ -2767,7 +2767,7 @@ section.studio_double div.double img:nth-of-type(2) {
           -webkit-transition: all 0.3s ease-in-out;
           -moz-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
-          color: #bdb061; }
+          color: #e71c37; }
         .footer_container footer ul.footer_social li:hover {
           color: #fff; }
 
