@@ -130,7 +130,7 @@
         <section class="project_subsection_header">
             <div>
             <?php if(get_sub_field('subsection_title')) : ?>
-                <h4><?php the_sub_field('subsection_title'); ?></h4>
+                <h4><?php the_sub_field('subsection_title'); ?> <span><?php the_sub_field('subsection_subtitle'); ?></span></h4>
             <?php endif; ?>
             <?php if(get_sub_field('subsection_text')) : ?>
                 <div class="subsection_text"><?php the_sub_field('subsection_text'); ?></div>

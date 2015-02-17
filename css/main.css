@@ -1762,6 +1762,8 @@ section {
           width: 100%; }
           section article.narrative h3.title:last-child, section article.narrative div.text:last-child, section article.narrative .details:last-child {
             margin-right: 0; } }
+    section article.narrative a {
+      color: #e71c37; }
     section article.narrative.split h3.title {
       display: block;
       float: left;
@@ -2158,6 +2160,10 @@ section {
         @media screen and (max-width: 480px) {
           .project .project_subsection_header > div h4 {
             font-size: 1em; } }
+        .project .project_subsection_header > div h4 span {
+          display: block;
+          /*color: $medium-gray;*/
+          font-family: "RotisSemiSansW01-Light"; }
       .project .project_subsection_header > div .subsection_text {
         padding: 1.7341% 0;
         color: #b3b9ba;

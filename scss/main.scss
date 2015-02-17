@@ -1448,13 +1448,15 @@ section {
                 @include span-columns(4);
             }
         }
+        a {
+            color: $hover-color;
+        }
         &.split {
             h3.title {
                 @include span-columns(4);
                 @include media($tablet) {
                     @include span-columns(8);
                 }
-                        
             }
             div.image {
                 @include span-columns(4);
@@ -1726,6 +1728,11 @@ section {
                 @include type($medium, #000);
                 font-family: $rotisSemiSansExtraBold;
                 @include pad(default 0);
+                span {
+                    display: block;
+                    /*color: $medium-gray;*/
+                    font-family: $rotisSemiSansLight;
+                }
             }
             .subsection_text {
                 @include pad(default 0);
