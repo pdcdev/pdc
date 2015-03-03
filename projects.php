@@ -8,7 +8,7 @@ get_header(); ?>
                 <h3 class="title"></h3>
                 <div class="text">
                     <p>Our projects are focused in three areas: brand identity, interactive experiences, and environmental graphics.</p>
-                    <p>Brand identity ensures recognizability, interaction design facilitates maximum accessibility, and environmental graphics make navigation easier.</p>
+                    <p>Brand identity ensures recognizability, interaction design facilitates maximum accessibility, and environmental wayfinding makes navigation easier.</p>
                     <p>When integrated, they amplify one other and enhance the complete brand experience.</p>
                 </div>
             </article>

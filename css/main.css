@@ -112,7 +112,8 @@ section {
     .solidbg ul li a:after {
       color: #b3b9ba; }
     .solidbg ul li a:hover {
-      color: #000; }
+      /*color: #000;*/
+      color: #e71c37; }
   .solidbg ul .current_page_item a, .solidbg ul .current_menu_item a {
     color: #000; }
   .solidbg .main_nav a.nav_btn:after {
@@ -152,7 +153,8 @@ section {
   .clearbg ul .current_page_item a, .clearbg ul .current_menu_item a {
     color: white; }
   .clearbg:hover {
-    background-color: #f3f4f4;
+    /*background-color: $bg-gray;*/
+    background-color: rgba(0, 0, 0, 0.2);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -161,7 +163,7 @@ section {
       .clearbg:hover {
         background-color: transparent; } }
     .clearbg:hover h1 {
-      color: #000;
+      /*color: #000;*/
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
@@ -179,7 +181,8 @@ section {
         .clearbg:hover ul li a {
           color: #fff; } }
       .clearbg:hover ul li a:hover {
-        color: #000; }
+        /*color: #000;*/
+        color: #e71c37; }
         @media screen and (max-width: 768px) {
           .clearbg:hover ul li a:hover {
             color: #fff; } }
@@ -201,7 +204,7 @@ section {
         color: #fff; } }
 
 .header_ghost {
-  height: 67px;
+  height: 80px;
   /*display: none;*/ }
 
 .dark {
@@ -214,7 +217,7 @@ section {
   width: 100%;
   position: fixed;
   margin-top: 0;
-  height: 67px;
+  height: 80px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -244,7 +247,7 @@ section {
         font-size: 1.125em;
         cursor: pointer;
         display: inline-block;
-        line-height: 67px; }
+        line-height: 80px; }
         @media screen and (max-width: 768px) {
           .header_container header .logo_container h1 {
             display: block;
@@ -378,7 +381,7 @@ section {
             font-size: 1.125em;
             font-family: "RotisSemiSansW01-ExtraB";
             cursor: pointer;
-            line-height: 67px;
+            line-height: 80px;
             /*nav slashes*/ }
             .header_container header nav.main_nav .nav_container ul li a:after {
               /*content:"/";*/
@@ -408,7 +411,7 @@ section {
   margin-top: 0; }
 
 .slideUp {
-  margin-top: -67px; }
+  margin-top: -80px; }
   @media screen and (max-width: 768px) {
     .slideUp {
       margin-top: 0; } }
@@ -760,7 +763,7 @@ aside.side_gist {
       background-color: rgba(0, 0, 0, 0.2);
       position: absolute;
       width: 100%;
-      height: 110px;
+      height: 80px;
       bottom: 0; }
       @media screen and (max-width: 480px) {
         .home_featured ul li .tintbg {
@@ -777,7 +780,7 @@ aside.side_gist {
           clear: both; }
         .home_featured ul li .tintbg .project_label_container .project_label {
           position: relative;
-          padding: 2em 0;
+          padding: 1em 0;
           /*width: 100%;*/
           display: block; }
           .home_featured ul li .tintbg .project_label_container .project_label p {
@@ -816,6 +819,12 @@ aside.side_gist {
                 width: 100%; }
                 .home_featured ul li .tintbg .project_label_container .project_label .project_titles:last-child {
                   margin-right: 0; } }
+            .home_featured ul li .tintbg .project_label_container .project_label .project_titles h3 a {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out; }
+              .home_featured ul li .tintbg .project_label_container .project_label .project_titles h3 a:hover {
+                color: #e71c37; }
           .home_featured ul li .tintbg .project_label_container .project_label .goto_btn {
             right: 0;
             position: absolute;

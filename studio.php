@@ -51,7 +51,7 @@ get_header(); ?>
                 <article>
                     <h4>Environmental Graphics</h4>
                     <ol>
-                        <li>Signage and wayfinding</li>
+                        <li>Environmental Graphics</li>
                         <li>Interior graphics and art</li>
                         <li>Donor recognition signage</li>
                         <li>Temporary signage</li>
