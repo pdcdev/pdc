@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){var t=!1,n=!1,r=!1,i=!1,s=!1,o=e("body");o.keypress(function(e){switch(e.keyCode){case 97:t==0&&(t=!0);break;case 100:t==1&&(n=!0);break;case 109:n==1&&(r=!0);break;case 105:r==1&&(i=!0);break;case 110:i==1&&(window.location="http://www.piscatello.com/wp-admin");break;default:t=!1,n=!1,r=!1,i=!1,s=!1}})});
