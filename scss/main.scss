@@ -19,6 +19,8 @@ $bg-gray: $light-gray;
 
 $header-height: 80px;
 $header-type-size: 18/16*1em;
+/*$header-type-size: 20/16*1em;*/
+/*$header-type-size: 16/16*1em;*/
 
 $large-text:  36/16*1em;
 $medium-text: 20/16*1em;
@@ -241,8 +243,8 @@ section {
         li {
             a {
                 color: rgba(#fff, .6);
+                @include transition (all .3s ease-in-out);
                 &:after {
-                    /*content:"/";*/
                     @include pad(0 0 0 2em);
                     color: rgba(#fff, .77);
                 }
@@ -255,7 +257,6 @@ section {
         }
     }
     &:hover {
-        /*background-color: $bg-gray;*/
         background-color: rgba(#000, .2);
         @include transition (all .3s ease-in-out);
         color: $dark-gray;
@@ -263,7 +264,6 @@ section {
             background-color: transparent;
         }
         h1 {
-            /*color: #000;*/
             @include transition (all .3s ease-in-out);
             @include media($tablet) {
                 color: #fff;
@@ -278,12 +278,11 @@ section {
                             color: #fff;
                         }
                     }
-                    color: $dark-gray;
+                    color: #fff;
                     @include media($tablet) {
                         color: #fff;
                     }
                     &:hover {
-                        /*color: #000;*/
                         color: $hover-color;
                         @include media($tablet) {
                             color: #fff;
@@ -1148,7 +1147,8 @@ section.goto {
                     }
                     .project_label {
                         .project_title {
-                            color: #000;
+                            /*color: #000;*/
+                            color: $hover-color;
                         }
                         .caption {
                             /*color: #000;*/
@@ -1235,7 +1235,7 @@ section.goto {
                     }
                     .project_label {
                         .project_title {
-                            color: #000;
+                            color: $hover-color;
                         }
                         .caption {
 
@@ -1246,7 +1246,6 @@ section.goto {
         }
     }
 }
-
 
 #map-canvas {
     height: 800px;
@@ -2125,16 +2124,16 @@ section.studio_double {
                 @include media($mobile) {
                     @include span-columns(4);
                 }
-                /*color: $bg-gray;*/
                 ul {
                     li {
                         float: left;
                         @include pad(0 .5em 0 0);
                         a {
                             display: inline;
-                            color: $hover-color;
+                            color: #fff;
                             &:hover {
-                                color: #fff;
+                                color: $hover-color;
+                                
                             }
                         }
                     }
