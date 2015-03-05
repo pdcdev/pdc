@@ -1,8 +1,17 @@
 <?php get_header(); ?>
 
-<?php
-
-if( get_field('home_featured') ): ?>
+<div class="introbg">
+    <section class="intro">
+        <div>
+            <p>Piscatello Design Centre <br class="introbr" />
+            is a strategic brand consultancy</p>
+        </div>
+    </section>
+</div>
+<div class="feat_title">
+    <p>Featured Projects</p>
+</div>
+<?php if( get_field('home_featured') ): ?>
     <div class="home_featured" style="opacity:0">
         <div class="projects_container flexslider">
             <ul class="slides">

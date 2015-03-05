@@ -539,6 +539,53 @@ section {
     background-size: cover;
     background-position: center center;
 }
+.vertcent_parent {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.feat_title {
+    height: 80px;
+    @extend .vertcent_parent;
+    p {
+        text-align: center;
+        width: 100%;
+        @include type($medium, $dark-gray);
+        font-family: $rotisSemiSansExtraBold;
+    }
+}
+.introbg {
+    background: url('../images/PDC_Studio_People_Grey.jpg') top center;
+    background-size: cover;
+    background-color: #000;
+    background-attachment: fixed;
+    height: 80%;
+    .intro {
+        height: 100%;
+        @extend .vertcent_parent;
+        div { 
+            width: 100%;
+            p {
+                /*@include type($large, #fff);*/
+                color: #fff;
+                font-size: 3em;
+                font-family: $rotisSemiSansExtraBold;
+                line-height: 1em;
+                text-align: center;
+                @include media($mobile) {
+                    .introbr {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 aside.more_projects {
     @include outer-container;
     @include pad(default $desk);
@@ -569,9 +616,6 @@ aside.more_projects {
         }
     }
 }
-
-
-
 aside.home_gist {
     @include outer-container;
     @include pad(16em $desk);
@@ -711,7 +755,7 @@ $project_title_color: rgba(0,0,0,.6);
 }
 .home_cover,.home_featured_new, .home_featured {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-size: cover;
     background-position: center center;
 }
