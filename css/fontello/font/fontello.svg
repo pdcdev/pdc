@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg">
-<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
 <defs>
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
@@ -9,8 +9,8 @@
 <glyph glyph-name="menu" unicode="&#xe800;" d="m0 412h1000v-125h-1000v125z m0 313h1000v-125h-1000v125z m0-625h1000v-126h-1000v126z" horiz-adv-x="1000" />
 <glyph glyph-name="facebook" unicode="&#xe801;" d="m0 350q0 95 37 182t100 149 150 100 182 37 182-37 149-100 100-149 37-182-37-182-100-150-149-100-182-37-182 37-150 100-100 150-37 182z m351 0h52v-253h105v253h70l9 87h-79v44q0 20 6 27t29 8h43v87h-70q-61 0-87-29t-26-85v-52h-52v-87z" horiz-adv-x="937.5" />
 <glyph glyph-name="twitter" unicode="&#xe802;" d="m456 539q0 80 57 135t137 56q85 0 139-59 60 13 122 45-20-67-83-106 53 8 110 31-39-58-97-101l0-24q0-136-60-255-60-121-190-206t-296-85q-162 0-295 86 20-2 48-2 133 0 237 81-65 1-113 40t-66 95q13-5 35-5t50 6q-65 14-108 67t-44 125q36-20 86-24-86 60-86 161 0 48 26 95 158-191 398-199-7 22-7 43z" horiz-adv-x="938" />
-<glyph glyph-name="right" unicode="&#xe803;" d="m0 296v108q0 7 5 12t13 5h696v125q0 12 11 17t19-3l215-196q5-5 5-12 0-8-5-14l-215-197q-9-8-19-4-11 5-11 17v124h-696q-8 0-13 6t-5 12z" horiz-adv-x="1000" />
-<glyph glyph-name="linkedin" unicode="&#xe804;" d="m0 672q0 41 29 68t75 27 74-27 29-68q0-41-29-68t-75-27h-1q-46 0-74 27t-28 68z m11-724v553h184v-553h-184z m285 0q1 223 1 361t0 165l-1 27h184v-80h-1q11 18 23 31t31 29 49 24 64 9q95 0 153-63t58-186v-317h-183v296q0 59-23 92t-71 33q-35 0-58-19t-36-48q-6-17-6-45v-309h-184z" horiz-adv-x="857.1" />
+<glyph glyph-name="right" unicode="&#xe803;" d="m964 352q0-8-5-14l-215-197q-9-8-19-4-11 5-11 17v125h-696q-8 0-13 5t-5 12v108q0 7 5 12t13 5h696v125q0 12 11 17t19-3l215-196q5-5 5-12z" horiz-adv-x="1000" />
+<glyph glyph-name="linkedin" unicode="&#xe804;" d="m195 501v-553h-184v553h184z m12 171q0-41-29-68t-75-27h-1q-46 0-74 27t-28 68q0 41 29 68t75 27 74-27 29-68z m650-407v-317h-183v296q0 59-23 92t-71 33q-35 0-58-19t-36-48q-6-17-6-45v-309h-184q1 223 1 361t0 165l-1 27h184v-80h-1q11 18 23 31t31 29 49 24 64 9q95 0 153-63t58-186z" horiz-adv-x="857.1" />
 <glyph glyph-name="close" unicode="&#xe805;" d="m919 681l-88 88-331-330-331 330-88-88 331-331-331-331 88-88 331 331 331-331 88 88-331 331 331 331z" horiz-adv-x="1000" />
 <glyph glyph-name="prev" unicode="&#xe806;" d="m727-51l-455 401 455 400v-801z" horiz-adv-x="1000" />
 <glyph glyph-name="next" unicode="&#xe807;" d="m272 750l455-400-455-401v801z" horiz-adv-x="1000" />
@@ -26,6 +26,10 @@
 <glyph glyph-name="arrow_down_left" unicode="&#xe811;" d="m728-4l125 125h-494l449 448-89 89-448-449v494l-125-125v-582h582z" horiz-adv-x="1000" />
 <glyph glyph-name="down" unicode="&#xe812;" d="m500 56l-411 411v177l411-412 412 412v-177l-412-411z" horiz-adv-x="1000" />
 <glyph glyph-name="up" unicode="&#xe813;" d="m500 644l412-412v-176l-412 411-411-411v176l411 412z" horiz-adv-x="1000" />
+<glyph glyph-name="circle_arrow_left" unicode="&#xe814;" d="m360 319l166-166h-91l-197 198 197 197h91l-166-166h370v-63h-370z m140-449c-265 0-480 216-480 481s215 480 480 480 480-216 480-480-215-481-480-481z m0 54c235 0 426 191 426 427s-191 426-426 426-426-191-426-426 191-427 426-427z" horiz-adv-x="1000" />
+<glyph glyph-name="circle_arrow_up" unicode="&#xe815;" d="m469 491l-167-166v90l198 198 198-198v-90l-166 166v-370h-63v370z m-449-140c0 264 215 480 480 480s480-216 480-480-215-481-480-481-480 216-480 481z m54 0c0-236 191-427 426-427s426 191 426 427-191 426-426 426-426-191-426-426z" horiz-adv-x="1000" />
+<glyph glyph-name="circle_arrow_right" unicode="&#xe816;" d="m641 382l-166 166h90l198-197-198-198h-90l166 166h-371v63h371z m-141 449c265 0 480-216 480-480s-215-481-480-481-480 216-480 481 215 480 480 480z m0-54c-235 0-426-191-426-426s191-427 426-427 426 191 426 427-191 426-426 426z" horiz-adv-x="1000" />
+<glyph glyph-name="circle_arrow_down" unicode="&#xe817;" d="m532 210l166 166v-90l-198-198-198 198v90l167-166v370h63v-370z m448 141c0-265-215-481-480-481s-480 216-480 481 215 480 480 480 480-216 480-480z m-54 0c0 235-191 426-426 426s-426-191-426-426 191-427 426-427 426 191 426 427z" horiz-adv-x="1000" />
 </font>
 </defs>
 </svg>

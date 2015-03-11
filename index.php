@@ -1,16 +1,47 @@
 <?php get_header(); ?>
 
-<div class="introbg">
-    <section class="intro">
-        <div>
-            <p>Piscatello Design Centre <br class="introbr" />
-            is a strategic brand consultancy</p>
-        </div>
-    </section>
-</div>
-<div class="feat_title">
-    <p>Featured Projects</p>
-</div>
+    <div class="introbg">
+        <video class="introvid" autoplay loop poster="pdchome.jpg">
+            <source src="<?php bloginfo('stylesheet_directory'); ?>/images/pdchome-desktop.m4v" type="video/mp4">
+        </video>
+        <div class="vidtint"></div>
+        <section class="intro">
+            <div>
+                <p class="pdc_is">Piscatello Design Center is a  <br />lorem ipsum dolor sit amet, <br />consectetur, adipiscing, et facilisis.</p>
+            <div>
+        </section>
+        <p class="feat_proj_btn">Our Services <br /> <i class="icon-circle_arrow_down"></i></p>
+    </div>
+
+    <div class="services_bg">
+        <section class="home_services">
+            <article>
+                <p class="title_num">1</p>
+                <h3>Design Thinking</h3>
+                <!-- <div class="service_symbol"><img alt="design thinking" src="#"></div> -->
+                <p>We provide design consultation and strategy to bring intelligence and clarity to complex communication challenges.</p>
+            </article>
+            <article>
+                <p class="title_num">2</p>
+                <h3>Brand Identity</h3>
+                <!-- <div class="service_symbol"><img alt="design thinking" src="#"></div> -->
+                <p>The systems we design unify the brand experience, integrating everything from the printed material to the signage in the building.</p>
+            </article>
+            <article>
+                <p class="title_num">3</p>
+                <h3>Interactive Experiences</h3>
+                <!-- <div class="service_symbol"><img alt="design thinking" src="#"></div> -->
+                <p>We approach interactive challenges with a keen eye for both functionality and aesthetic. We combine technology and design to create innovative solutions.</p>
+            </article>
+            <article>
+                <p class="title_num">4</p>
+                <h3>Environmental Graphics</h3>
+                <!-- <div class="service_symbol"><img alt="design thinking" src="#"></div> -->
+                <p>Our intuitive wayfinding systems consider the user at every step, creating engaging and memorable experiences.</p>
+            </article>
+        </section>
+    </div>
+
 <?php if( get_field('home_featured') ): ?>
     <div class="home_featured" style="opacity:0">
         <div class="projects_container flexslider">

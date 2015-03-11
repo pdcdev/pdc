@@ -19,3 +19,7 @@
 .icon-arrow_down_left:before { content: '\e811'; } /* '' */
 .icon-down:before { content: '\e812'; } /* '' */
 .icon-up:before { content: '\e813'; } /* '' */
+.icon-circle_arrow_left:before { content: '\e814'; } /* '' */
+.icon-circle_arrow_up:before { content: '\e815'; } /* '' */
+.icon-circle_arrow_right:before { content: '\e816'; } /* '' */
+.icon-circle_arrow_down:before { content: '\e817'; } /* '' */

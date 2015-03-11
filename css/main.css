@@ -422,51 +422,197 @@ section {
   background-size: cover;
   background-position: center center; }
 
-.vertcent_parent, .feat_title, .introbg .intro {
+.vertcent_parent, .introbg .intro {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
-  align-items: center; }
-
-.feat_title {
-  height: 80px; }
-  .feat_title p {
-    text-align: center;
-    width: 100%;
-    color: #b3b9ba;
-    line-height: inherit;
-    font-size: 1.25em;
-    font-family: "RotisSemiSansW01-ExtraB"; }
-    @media screen and (max-width: 768px) {
-      .feat_title p {
-        font-size: 1.125em; } }
-    @media screen and (max-width: 480px) {
-      .feat_title p {
-        font-size: 1em; } }
+  align-items: center;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .introbg {
   background: url("../images/PDC_Studio_People_Grey.jpg") top center;
   background-size: cover;
   background-color: #000;
-  background-attachment: fixed;
-  height: 80%; }
+  height: 100%; }
+  .introbg video.introvid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transition: 1s opacity; }
+    @media screen and (max-width: 768px) {
+      .introbg video.introvid {
+        display: none; } }
+  .introbg .vidtint {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .introbg .vidtint {
+        display: none; } }
   .introbg .intro {
-    height: 100%; }
-    .introbg .intro div {
+    z-index: 200;
+    opacity: 1;
+    height: 100%;
+    position: relative; }
+    .introbg .intro > div {
       width: 100%; }
-      .introbg .intro div p {
-        /*@include type($large, #fff);*/
-        color: #fff;
-        font-size: 3em;
-        font-family: "RotisSemiSansW01-ExtraB";
-        line-height: 1em;
-        text-align: center; }
-        @media screen and (max-width: 480px) {
-          .introbg .intro div p .introbr {
-            display: none; } }
+    .introbg .intro p {
+      color: #fff; }
+    .introbg .intro p.pdc_is {
+      text-align: center;
+      width: 100%;
+      font-size: 2.5em;
+      line-height: 1.2em;
+      font-family: "RotisSemiSansW01-ExtraB"; }
+      @media screen and (max-width: 768px) {
+        .introbg .intro p.pdc_is {
+          font-size: 1.75em;
+          margin-bottom: 3em; } }
+      @media screen and (max-width: 480px) {
+        .introbg .intro p.pdc_is br {
+          display: none; } }
+  .introbg p.feat_proj_btn {
+    padding: 0 0 3em 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-family: "RotisSemiSansW01-ExtraB";
+    z-index: 300;
+    opacity: 1;
+    color: #fff; }
+    @media screen and (max-width: 768px) {
+      .introbg p.feat_proj_btn {
+        padding: 0 0 1em 0; } }
+    .introbg p.feat_proj_btn i {
+      display: inline-table;
+      padding: 0.5em;
+      font-family: fontello;
+      cursor: pointer;
+      font-size: 1.5em;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+      .introbg p.feat_proj_btn i:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        color: #3498db; }
+
+div.services_bg {
+  background-color: #8e2c08;
+  /*    section.home_services {
+          article {
+              @include span-columns(4);
+              @include omega(4n);
+              @include media($tablet) {
+                  @include span-columns(4);
+                  @include omega(2n);
+                  @include pad(0 0 4em 0);
+              }
+              @include media($mobile) {
+                  @include span-columns(4);
+              }
+              h3 {
+                  text-align: center;
+                  font-family: $rotisSemiSansBold;
+                  @include type($medium, #000);
+              }
+              div.service_symbol {
+                  height: 200px;
+                  img {
+                      display: none;
+                  }
+              }
+              p {
+                  @include pad(0 .5em);
+                  @include type($small, #000);
+                  text-align: center;
+                  font-family: $rotisSemiSansItalic;
+              }
+          }
+      }*/ }
+  div.services_bg section.home_services article {
+    padding: 4em 0;
+    display: block;
+    float: left;
+    margin-right: 1.7341%;
+    width: 23.69942%; }
+    div.services_bg section.home_services article:last-child {
+      margin-right: 0; }
+    div.services_bg section.home_services article:nth-child(4n) {
+      margin-right: 0; }
+    div.services_bg section.home_services article:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 768px) {
+      div.services_bg section.home_services article {
+        display: block;
+        float: left;
+        margin-right: 3.52941%;
+        width: 48.23529%;
+        padding: 0 0 2em 0; }
+        div.services_bg section.home_services article:last-child {
+          margin-right: 0; }
+        div.services_bg section.home_services article:nth-child(2n) {
+          margin-right: 0; }
+        div.services_bg section.home_services article:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 480px) {
+      div.services_bg section.home_services article {
+        display: block;
+        float: left;
+        margin-right: 7.31707%;
+        width: 100%; }
+        div.services_bg section.home_services article:last-child {
+          margin-right: 0; } }
+    div.services_bg section.home_services article h3 {
+      font-family: "Rotis SemiSans W01 Bold";
+      color: white;
+      line-height: inherit;
+      font-size: 1.25em;
+      padding: 0 0 0.5em 0; }
+      @media screen and (max-width: 768px) {
+        div.services_bg section.home_services article h3 {
+          font-size: 1.125em; } }
+      @media screen and (max-width: 480px) {
+        div.services_bg section.home_services article h3 {
+          font-size: 1em; } }
+    div.services_bg section.home_services article .title_num {
+      padding: 0 0 0.5em 0;
+      border-top: 3px solid #fff;
+      font-size: 5em;
+      font-family: "Rotis SemiSans W01 Bold";
+      line-height: 1em; }
+    div.services_bg section.home_services article p {
+      color: white;
+      line-height: inherit;
+      font-size: 1em;
+      font-family: "RotisSemiSansW01-Italic"; }
+      @media screen and (max-width: 768px) {
+        div.services_bg section.home_services article p {
+          font-size: 1em; } }
+      @media screen and (max-width: 480px) {
+        div.services_bg section.home_services article p {
+          font-size: 0.9375em; } }
 
 aside.more_projects {
   *zoom: 1;
@@ -707,7 +853,7 @@ aside.side_gist {
 
 .home_cover, .home_featured_new, .home_featured {
   width: 100%;
-  height: 90%;
+  height: 100%;
   background-size: cover;
   background-position: center center; }
 

@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 
     function feature_image_height() {
         eighty_height.each(function(){
-            $(this).css( "height", Math.round( $(window).height() * 0.9 ) + "px");
+            $(this).css( "height", Math.round( $(window).height() ) + "px");
         });
     }
 
@@ -30,6 +30,21 @@ jQuery(document).ready(function($) {
     });
 
     feature_image_height();
+
+    function resizeVideo() {
+      if ($(window).height() > $(window).width() * 0.5425) { // Which dimension is bigger dependant on aspect ratio (16:9)
+        $("video").removeAttr("height").removeAttr("width").width("auto").height("100%");
+      }
+      else {
+        $("video").removeAttr("height").removeAttr("width").width("100%").height("auto");
+      }
+    };
+
+    var resizeTimer;
+    $(window).resize(function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resizeVideo, 150);
+    });
 
     // $(window).scroll(function(){
     //     if( $("body").scrollTop() > $(".image_box").height() ) {
