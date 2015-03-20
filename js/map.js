@@ -174,11 +174,13 @@ function initialize() {
 
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
+  var image = new google.maps.MarkerImage('../images/marker.png';
+
   var marker = new google.maps.Marker({
       position: loc,
       map: map,
       title:"Piscatello Design Centre",
-      icon: 'http://piscatello.com/wp-content/themes/pdc/images/pin.png'
+      icon: image
   });
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
