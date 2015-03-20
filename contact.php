@@ -12,7 +12,7 @@ get_header(); ?>
                 </div>
             </article>
         </section>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
         <aside class="map">
             <div id="map-canvas"></div>
         </aside>
