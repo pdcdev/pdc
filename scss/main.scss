@@ -2120,9 +2120,9 @@ section.studio_double {
                         @include pad(0 .5em 0 0);
                         a {
                             display: inline;
-                            color: $hover-color;
+                            color: #fff;
                             &:hover {
-                                color: #fff;
+                                color: $hover-color;
                             }
                         }
                     }
