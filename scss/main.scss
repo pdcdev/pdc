@@ -476,19 +476,14 @@ section {
                     li {
                         a {
                             @include transition (all .1s ease-in-out);
-                            @include pad(0 2.5em 0 0);
+                            /*@include pad(0 2.5em 0 0);*/
+                            @include span-columns(2 of 8);
                             display: inline;
                             float: left;
                             font-size: $header-type-size;
                             font-family: $rotisSemiSansExtraBold;
                             cursor: pointer;
                             line-height: $header-height;
-                            /*nav slashes*/
-                            &:after {
-                                /*content:"/";*/
-                                @include pad(0 0 0 2em);
-                                opacity: .5;
-                            }
                             @include media($tablet) {
                                 @include pad(.5em 0);
                                 display: block;
@@ -507,8 +502,7 @@ section {
                             }
                             @include media($mobile) {
                                 font-size: 2em;
-                            }
-                                    
+                            }     
                         }
                         &:last-child {
                             a {
@@ -2113,7 +2107,6 @@ section.studio_double {
                 @include media($mobile) {
                     @include span-columns(4);
                 }
-                /*color: $bg-gray;*/
                 ul {
                     li {
                         float: left;
