@@ -4,13 +4,13 @@ jQuery(document).ready(function($) {
 
     $(".project_subsection_header").eq(0).addClass("first");
 
-    $(window).scroll(function(){
-        if( $("body").scrollTop() > $(".cover_image").height() ) {
-            $(".header_container").addClass("solidbg").removeClass("clearbg");
-        } else {
-            $(".header_container").addClass("clearbg").removeClass("solidbg");
-        }
-    });
+    // $(window).scroll(function(){
+    //     if( $("body").scrollTop() > $(".cover_image").height() ) {
+    //         $(".header_container").addClass("solidbg").removeClass("clearbg");
+    //     } else {
+    //         $(".header_container").addClass("clearbg").removeClass("solidbg");
+    //     }
+    // });
 
     more_btn.click(function(){{
         $('html, body').animate({

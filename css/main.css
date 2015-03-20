@@ -135,7 +135,7 @@ section {
       color: #000; } }
 
 .clearbg {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   /*hover*/ }
   @media screen and (max-width: 768px) {
     .clearbg.active a.nav_btn:after {
@@ -154,7 +154,6 @@ section {
   .clearbg ul .current_page_item a, .clearbg ul .current_menu_item a {
     color: white; }
   .clearbg:hover {
-    background-color: #f3f4f4;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -163,32 +162,26 @@ section {
       .clearbg:hover {
         background-color: transparent; } }
     .clearbg:hover h1 {
-      color: #000;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
       .clearbg:hover h1:hover {
-        color: #b3b9ba; }
+        color: rgba(255, 255, 255, 0.6); }
       @media screen and (max-width: 768px) {
         .clearbg:hover h1 {
           color: #fff; } }
     .clearbg:hover ul li a {
-      color: #b3b9ba; }
-      .clearbg:hover ul li a:after {
-        color: #b3b9ba; }
-        @media screen and (max-width: 768px) {
-          .clearbg:hover ul li a:after {
-            color: #fff; } }
+      /*color: $dark-gray;*/ }
       @media screen and (max-width: 768px) {
         .clearbg:hover ul li a {
           color: #fff; } }
       .clearbg:hover ul li a:hover {
-        color: #000; }
+        color: #fff; }
         @media screen and (max-width: 768px) {
           .clearbg:hover ul li a:hover {
             color: #fff; } }
     .clearbg:hover ul .current_page_item a, .clearbg:hover ul .current_menu_item a {
-      color: #000; }
+      color: #fff; }
       @media screen and (max-width: 768px) {
         .clearbg:hover ul .current_page_item a, .clearbg:hover ul .current_menu_item a {
           color: #fff; } }
@@ -1768,7 +1761,7 @@ section {
           section article.narrative h3.title:last-child, section article.narrative div.text:last-child, section article.narrative .details:last-child {
             margin-right: 0; } }
     section article.narrative a {
-      color: #e71c37; }
+      color: #000; }
     section article.narrative.split h3.title {
       display: block;
       float: left;

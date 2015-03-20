@@ -221,7 +221,7 @@ section {
     }
 }
 .clearbg {
-    background-color: transparent;
+    background-color: rgba(#000,.2);
     &.active {
         @include media($tablet) {
             .nav_container {
@@ -257,17 +257,15 @@ section {
         }
     }
     &:hover {
-        background-color: $bg-gray;
         @include transition (all .3s ease-in-out);
         color: $dark-gray;
         @include media($tablet) {
             background-color: transparent;
         }
         h1 {
-            color: #000;
             @include transition (all .2s ease-in-out);
             &:hover {
-               color: $medium-gray; 
+               color: rgba(#fff, 0.6);
             }
             @include media($tablet) {
                 color: #fff;
@@ -276,18 +274,12 @@ section {
         ul {
             li {
                 a {
-                    &:after {
-                        color: $dark-gray;
-                        @include media($tablet) {
-                            color: #fff;
-                        }
-                    }
-                    color: $dark-gray;
+                    /*color: $dark-gray;*/
                     @include media($tablet) {
                         color: #fff;
                     }
                     &:hover {
-                        color: #000;
+                        color: #fff;
                         @include media($tablet) {
                             color: #fff;
                         }
@@ -296,7 +288,7 @@ section {
             }
             .current_page_item, .current_menu_item {
                 a {
-                    color: #000;
+                    color: #fff;
                     @include media($tablet) {
                         color: #fff;
                     }
@@ -1449,7 +1441,7 @@ section {
             }
         }
         a {
-            color: $hover-color;
+            color: #000;
         }
         &.split {
             h3.title {
