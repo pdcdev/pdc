@@ -156,7 +156,10 @@ section {
     background-color: $bg-gray;
     h1 {
         color: #000;
-        @include transition (all .3s ease-in-out);
+        @include transition (all .2s ease-in-out);
+        &:hover {
+           color: $medium-gray; 
+        }
     }
     @include transition (all .3s ease-in-out);
     color: $dark-gray;
@@ -262,7 +265,10 @@ section {
         }
         h1 {
             color: #000;
-            @include transition (all .3s ease-in-out);
+            @include transition (all .2s ease-in-out);
+            &:hover {
+               color: $medium-gray; 
+            }
             @include media($tablet) {
                 color: #fff;
             }

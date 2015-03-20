@@ -104,9 +104,11 @@ section {
   color: #b3b9ba; }
   .solidbg h1 {
     color: #000;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .solidbg h1:hover {
+      color: #b3b9ba; }
   .solidbg ul li a {
     color: #b3b9ba; }
     .solidbg ul li a:after {
@@ -162,9 +164,11 @@ section {
         background-color: transparent; } }
     .clearbg:hover h1 {
       color: #000;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .clearbg:hover h1:hover {
+        color: #b3b9ba; }
       @media screen and (max-width: 768px) {
         .clearbg:hover h1 {
           color: #fff; } }
