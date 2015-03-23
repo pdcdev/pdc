@@ -16,7 +16,6 @@ get_header(); ?>
         <aside class="map">
             <div id="map-canvas"></div>
         </aside>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false"></script>
         <section class="address">
             <article class="narrative">
                 <h3 class="title">Contact Us</h3>
