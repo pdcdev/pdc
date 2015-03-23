@@ -179,8 +179,9 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: loc,
       map: map,
-      title:"Piscatello Design Centre",
-      icon: image
+      title:"Piscatello Design Centre"
+      // ,
+      // icon: image
   });
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
