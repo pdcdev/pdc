@@ -28,8 +28,7 @@ function theme_js() {
 
     wp_register_script( 'flexslider', get_template_directory_uri() . '/js/flexslider-ck.js', array('jquery'), '', true );
     wp_register_script( 'home', get_template_directory_uri() . '/js/home-ck.js', array('jquery'), '', true );
-    wp_register_script( 'map', get_template_directory_uri() . '/js/map-ck.js', array('jquery','google_maps'), '', true );
-    wp_register_script( 'google_maps','https://maps.googleapis.com/maps/api/js?v=3&sensor=false','', '', true );
+    wp_register_script( 'map', get_template_directory_uri() . '/js/map-ck.js', array('jquery'), '', true );
     wp_register_script( 'projects', get_template_directory_uri() . '/js/projects-ck.js', array('jquery'), '', true );
     wp_register_script( 'studio', get_template_directory_uri() . '/js/studio-ck.js', array('jquery'), '', true );
     wp_register_script( 'contact', get_template_directory_uri() . '/js/contact-ck.js', array('jquery'), '', true );
@@ -54,7 +53,6 @@ function theme_js() {
     }
     if( is_page('contact') ) {
         wp_enqueue_script( 'map' );
-        wp_enqueue_script( 'google_maps' );
     }
 }
 
