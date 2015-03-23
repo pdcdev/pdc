@@ -177,8 +177,9 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: loc,
       map: map,
-      title:"Piscatello Design Centre",
-      icon: 'http://piscatello.com/wp-content/themes/pdc/images/pin.png'
+      title:"Piscatello Design Centre"
+      //,
+      //icon: 'http://piscatello.com/wp-content/themes/pdc/images/pin.png'
   });
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
