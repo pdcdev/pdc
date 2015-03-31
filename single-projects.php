@@ -13,9 +13,9 @@
         <?php endif; ?>
         <div class="more_arrow">
         <?php if( get_field("arrow_color") == "Black" ): ?>
-            <i class="icon-down dark_arrow"></i>
+            <i class="icon-down dark_arrow hidden"></i>
         <?php else : ?>
-            <i class="icon-down light_arrow"></i>
+            <i class="icon-down light_arrow hidden"></i>
         <?php endif; ?>
         </div>
     <?php endif; ?>

@@ -11,54 +11,39 @@ get_header(); ?>
         </aside>
     <?php endif;?>
     <section>
+        <?php if( get_field( "profile" ) ) : ?>
         <article class="narrative">
             <h3 class="title">Profile</h3>
             <div class="text">
-                <?php if( get_field( "profile" ) ) : ?>
                     <?php the_field( "profile" ); ?>
-                <?php endif; ?>
+                
             </div>
         </article>
+        <?php endif; ?>
     </section>
     <div class="gray_container">
         <section class="services">
+            <?php if( get_field( "services_description" ) ) : ?>
+            <article class="narrative">
+                <h3 class="title"></h3>
+                <div class="text">
+                    <?php the_field( "services_description" ); ?>
+                </div>
+            </article>
+            <?php endif; ?>
             <h3 class="title">Services</h3>
             <div class="services_list">
                 <article>
                     <h4>Brand Identity</h4>
-                    <ol>
-                        <li>Brand strategy</li>
-                        <li>Naming</li>
-                        <li>Identity development</li>
-                        <li>Marketing materials</li>
-                        <li>Stationery program</li>
-                        <li>Books and magazines</li>
-                        <li>Print collateral</li>
-                    </ol>
+                    <p><?php the_field( "brand_identity_services" ); ?></p>
                 </article>
                 <article>
                     <h4>Interactive Experiences</h4>
-                    <ol>
-                        <li>Website design</li>
-                        <li>Website development</li>
-                        <li>Digital strategy</li>
-                        <li>Content management systems</li>
-                        <li>User interface design</li>
-                        <li>Digital signage systems</li>
-                        <li>Social media strategy</li>
-                    </ol>
+                    <p><?php the_field( "interactive_experience_services" ); ?></p>
                 </article>
                 <article>
                     <h4>Environmental Graphics</h4>
-                    <ol>
-                        <li>Signage and wayfinding</li>
-                        <li>Interior graphics and art</li>
-                        <li>Donor recognition signage</li>
-                        <li>Temporary signage</li>
-                        <li>Exhibition design and events</li>
-                        <li>Retail experiences</li>
-                        <li>Memorial graphics</li>
-                    </ol>
+                    <p><?php the_field( "environmental_graphics_services" ); ?></p>
                 </article>
 
             </div>

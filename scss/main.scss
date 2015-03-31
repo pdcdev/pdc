@@ -1298,6 +1298,11 @@ aside.map {
             @include pad(0 0 4em 0);
         }
     }
+    article {
+        &.narrative {
+            @include pad(0 0 4em 0);
+        }
+    }
     div.services_list {
         @include span-columns(12);
         @include clearfix;
@@ -1324,7 +1329,7 @@ aside.map {
                     @include type($medium, $dark-gray);
                 }
             }
-            ol {
+            ol, p {
                 @include pad(1em 0 0 0);
                 list-style: none;
                 @include type($medium, $dark-gray);
@@ -1537,7 +1542,7 @@ section {
     @include clearfix;
     height: 0;
     i {
-        @include transition (all .3s ease-in-out);
+        @include transition (all .5s ease-in-out);
         width: 100px;
         @include pad(20px);
         font-size: 2em;
@@ -1546,15 +1551,23 @@ section {
         text-align: center;
         cursor: pointer;
         @include animation(scale 1.0s ease-in, slide 2.0s ease);
+        &.hidden {
+            @include transform(translateY(1em));
+            opacity: 0;
+        }
+        &.visible {
+            @include transform(translateY(0));
+            opacity: 1;
+        }
         &.light_arrow {
-            color: rgba(#fff, .2);
+            color: rgba(#fff, 1);
             &:hover {
                 /*color: rgba(#fff, 1);*/
                 color: $hover-color;
             }
         }
         &.dark_arrow {
-            color: rgba(#000, .2);
+            color: rgba(#000, 1);
             &:hover {
                 /*color: rgba(#000, 1);*/
                 color: $hover-color;

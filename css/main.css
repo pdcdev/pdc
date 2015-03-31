@@ -1494,6 +1494,8 @@ aside.map {
         padding: 0 0 4em 0; }
         .services h3:last-child {
           margin-right: 0; } }
+  .services article.narrative {
+    padding: 0 0 4em 0; }
   .services div.services_list {
     display: block;
     float: left;
@@ -1576,20 +1578,20 @@ aside.map {
           @media screen and (max-width: 768px) and (max-width: 480px) {
             .services div.services_list article h4 {
               font-size: 1em; } }
-      .services div.services_list article ol {
+      .services div.services_list article ol, .services div.services_list article p {
         padding: 1em 0 0 0;
         list-style: none;
         color: #b3b9ba;
         line-height: inherit;
         font-size: 1.25em; }
         @media screen and (max-width: 768px) {
-          .services div.services_list article ol {
+          .services div.services_list article ol, .services div.services_list article p {
             font-size: 1.125em; } }
         @media screen and (max-width: 480px) {
-          .services div.services_list article ol {
+          .services div.services_list article ol, .services div.services_list article p {
             font-size: 1em; } }
         @media screen and (max-width: 768px) {
-          .services div.services_list article ol {
+          .services div.services_list article ol, .services div.services_list article p {
             padding: 0.5em 0 2em 0; } }
 
 .team {
@@ -1893,9 +1895,9 @@ section {
   .more_arrow:after {
     clear: both; }
   .more_arrow i {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 100px;
     padding: 20px;
     font-size: 2em;
@@ -1906,13 +1908,27 @@ section {
     -webkit-animation: scale 1s ease-in, slide 2s ease;
     -moz-animation: scale 1s ease-in, slide 2s ease;
     animation: scale 1s ease-in, slide 2s ease; }
+    .more_arrow i.hidden {
+      -webkit-transform: translateY(1em);
+      -moz-transform: translateY(1em);
+      -ms-transform: translateY(1em);
+      -o-transform: translateY(1em);
+      transform: translateY(1em);
+      opacity: 0; }
+    .more_arrow i.visible {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
     .more_arrow i.light_arrow {
-      color: rgba(255, 255, 255, 0.2); }
+      color: white; }
       .more_arrow i.light_arrow:hover {
         /*color: rgba(#fff, 1);*/
         color: #e71c37; }
     .more_arrow i.dark_arrow {
-      color: rgba(0, 0, 0, 0.2); }
+      color: black; }
       .more_arrow i.dark_arrow:hover {
         /*color: rgba(#000, 1);*/
         color: #e71c37; }

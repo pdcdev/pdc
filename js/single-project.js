@@ -23,5 +23,9 @@ jQuery(document).ready(function($) {
             $(this).animate({opacity: 1}, 600, "easeOutSine");
         }, {offset: '95%'});
     });
+    $(window).load(function(){
+        $(".more_arrow i").removeClass("hidden").addClass("visible");
+    });
+    
 
 });

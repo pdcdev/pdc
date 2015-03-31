@@ -6,11 +6,11 @@ get_header(); ?>
         <section class="projects_description">
             <article class="narrative">
                 <h3 class="title"></h3>
+                <?php if( get_field("project_page_description") ): ?>
                 <div class="text">
-                    <p>Our projects are focused in three areas: brand identity, interactive experiences, and environmental graphics.</p>
-                    <p>Brand identity ensures recognizability, interaction design facilitates maximum accessibility, and environmental graphics make navigation easier.</p>
-                    <p>When integrated, they amplify one other and enhance the complete brand experience.</p>
+                    <p><?php the_field("project_page_description"); ?></p>
                 </div>
+                <?php endif; ?>
             </article>
         </section>
 
