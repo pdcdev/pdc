@@ -1056,7 +1056,6 @@ section.goto {
 }
 .projects_description {
     @include media($mobile) {
-        display: none;
     }
 }
 // projects page thumbnails

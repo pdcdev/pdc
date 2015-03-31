@@ -4,14 +4,6 @@ jQuery(document).ready(function($) {
 
     $(".project_subsection_header").eq(0).addClass("first");
 
-    // $(window).scroll(function(){
-    //     if( $("body").scrollTop() > $(".cover_image").height() ) {
-    //         $(".header_container").addClass("solidbg").removeClass("clearbg");
-    //     } else {
-    //         $(".header_container").addClass("clearbg").removeClass("solidbg");
-    //     }
-    // });
-
     more_btn.click(function(){{
         $('html, body').animate({
             scrollTop: $(".project_info_section").offset().top
@@ -23,9 +15,8 @@ jQuery(document).ready(function($) {
             $(this).animate({opacity: 1}, 600, "easeOutSine");
         }, {offset: '95%'});
     });
-    $(".cover_image").load(function(){
+    $(window).load(function(){
         $(".more_arrow i").removeClass("hidden").addClass("visible");
     });
-    
-
+    $(window).removeClass("hidden").addClass("visible");
 });

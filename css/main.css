@@ -1174,10 +1174,6 @@ section.goto {
         -o-transform: scale(1);
         transform: scale(1); }
 
-@media screen and (max-width: 480px) {
-  .projects_description {
-    display: none; } }
-
 .projects_section {
   padding: 0 40px; }
   @media screen and (max-width: 768px) {
