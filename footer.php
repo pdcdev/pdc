@@ -1,12 +1,10 @@
     <div class="footer_container">
         <footer>
             <div>
-
                 <div class="footer_name">
                     <h4><a href="<?php echo home_url(); ?>">Piscatello Design Centre</a></h4>
-                    <p class="phrase"></p>
+                    <p class="copy">Copyright <span>&copy;</span> <?php echo date("Y") ?></p>
                 </div>
-
                 <article class="footer_contact">
                     <address>
                         <p>330 West 38th Street, Suite 1005 <br />New York, New York 10018</p>
@@ -21,7 +19,6 @@
                         </ul>
                     </div>
                 </article>
-
             </div>
         </footer>
     </div>

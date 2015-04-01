@@ -2092,8 +2092,11 @@ section.studio_double {
         }
     }
 }
+
+$footer_color: #939598;
+
 .footer_container {
-    background-color: #414042;
+    background-color: #000;
     footer {
         @include outer-container;
         @include pad(0 $desk);
@@ -2105,31 +2108,31 @@ section.studio_double {
         }
         height: 100px;
         @include media($tablet) {
-            height: 280px;
+            height: 255px;
         }
         @include media($mobile) {
-            height: 305px;       
+            height: 290px;       
         }
+        line-height: 1.25em;
         > div {
-            @include pad(1.5em 0 0 0);
+            @include pad(1.75em 0 0 0);
             @include media($tablet) {
                 @include pad(.5em 0 0 0);
             }
-                    
         }
         .footer_name {
             @include span-columns(4);
             @include media($tablet) {
                 @include span-columns(4);
+                @include pad(0 0 1em 0);
             }
             @include media($mobile) {
                 @include span-columns(4);
             }
             h4 {
                 font-family: $rotisSemiSansExtraBold;
-                @include pad(0 0 1em 0);
             }
-            color: #fff;
+            color: $footer_color;
             font-size: $header-type-size;
             a {
                 @include transition (all .25s ease-in-out);
@@ -2137,6 +2140,16 @@ section.studio_double {
                     color: rgba(#fff, .6);
                 }
             }
+            p.copy {
+                color: $footer_color;
+                span {
+                    position: relative;
+                    font-size: 1.5em;
+                    @include pad(1em 0 0 0);
+                    top : .25em
+                }
+            }
+            
         }
         .footer_contact {
             @include span-columns(12);
@@ -2166,7 +2179,7 @@ section.studio_double {
                         float: left;
                         a {
                             display: inline;
-                            color: #939598;
+                            color: $footer_color;
                             &:hover {
                                 color: $hover-color;
                             }
