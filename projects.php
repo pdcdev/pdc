@@ -8,7 +8,7 @@ get_header(); ?>
                 <h3 class="title">Our Work</h3>
                 <?php if( get_field("project_page_description") ): ?>
                 <div class="text">
-                    <p><?php the_field("project_page_description"); ?></p>
+                    <?php the_field("project_page_description"); ?>
                 </div>
                 <?php endif; ?>
             </article>
