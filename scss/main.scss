@@ -70,6 +70,20 @@ a.hover {
         @include pad(0 $mob);
     }
 }
+.vertical_center_parent {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 @mixin type( $size: $small-text, $color: inherit, $lineheight: inherit ) {
     color: $color;
     line-height: $lineheight;
@@ -2079,81 +2093,32 @@ section.studio_double {
     }
 }
 .footer_container {
-    background-color: #000;
+    background-color: #414042;
     footer {
         @include outer-container;
-        @include pad($desk);
+        @include pad(0 $desk);
         @include media($tablet) {
             @include pad($tab);
         }
         @include media($mobile) {
             @include pad($mob);
         }
-        height: 220px;
+        height: 100px;
         @include media($tablet) {
-            height: 240px;
+            height: 280px;
         }
         @include media($mobile) {
-            height: 270px;       
+            height: 305px;       
         }
-                        
-        .footer_contact {
-            @include span-columns(8);
+        > div {
+            @include pad(1.5em 0 0 0);
             @include media($tablet) {
-                @include span-columns(4 of 8);
+                @include pad(.5em 0 0 0);
             }
-            @include media($mobile) {
-               @include span-columns(4);
-            }
-            font-size: $header-type-size;
-            .title {
-                font-family: $rotisSemiSansExtraBold;
-            }
-            .social {
-                @include span-columns(4 of 8);
-                @include media($tablet) {
-                    @include span-columns(4 of 4);
-                }
-                @include media($mobile) {
-                    @include span-columns(4);
-                }
-                ul {
-                    li {
-                        float: left;
-                        @include pad(0 .5em 0 0);
-                        a {
-                            display: inline;
-                            color: #fff;
-                            &:hover {
-                                color: $hover-color;
-                            }
-                        }
-                    }
-                }
-            }
-            address {
-                @include span-columns(4 of 8);
-                @include media($tablet) {
-                    @include span-columns(8 of 8);
-                }
-                @include media($mobile) {
-                    @include span-columns(4);
-                }
-            }
-            p {
-                margin-bottom: 1em;
-                color: #fff;
-            }
-            a {
-                @include transition (all .2s ease-in-out);
-                        
-                &:hover {
-                    color: $hover-color;
-                }
-            }
+                    
         }
         .footer_name {
-            @include span-columns(8);
+            @include span-columns(4);
             @include media($tablet) {
                 @include span-columns(4);
             }
@@ -2166,22 +2131,56 @@ section.studio_double {
             }
             color: #fff;
             font-size: $header-type-size;
-        }
-        ul.footer_social {
-            @include span-columns(8);
-            list-style: none;
-            color: #fff;
-            li {
-                @include transition (all .3s ease-in-out);
-                float: left;
-                @include pad(0 1em 0 0);
-                i {
-                    cursor: pointer;
-                    @include transition (all .3s ease-in-out);
-                    color: $hover-color;
-                }
+            a {
+                @include transition (all .25s ease-in-out);
                 &:hover {
-                    color: #fff;
+                    color: rgba(#fff, .6);
+                }
+            }
+        }
+        .footer_contact {
+            @include span-columns(12);
+            @include media($tablet) {
+                @include span-columns(4);
+            }
+            @include media($mobile) {
+                @include span-columns(4);
+            }
+            font-size: $header-type-size;
+            > div, address {
+                @include span-columns(4 of 12);
+                @include media($tablet) {
+                    @include span-columns(4 of 4);
+                    @include pad(0 0 1em 0);
+                }
+                @include media($mobile) {
+                    @include span-columns(4);
+                }
+            }
+            .title {
+                font-family: $rotisSemiSansExtraBold;
+            }
+            .social {
+                ul {
+                    li {
+                        float: left;
+                        a {
+                            display: inline;
+                            color: #939598;
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+            p {
+                color: #939598;
+            }
+            a {
+                @include transition (all .2s ease-in-out);
+                &:hover {
+                    color: $hover-color;
                 }
             }
         }

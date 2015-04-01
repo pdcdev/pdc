@@ -6,22 +6,22 @@
                     <h4><a href="<?php echo home_url(); ?>">Piscatello Design Centre</a></h4>
                     <p class="phrase"></p>
                 </div>
+
                 <article class="footer_contact">
                     <address>
-                        <p>330 West 38th Street <br />
-                            Suite 1005 <br />
-                            New York <br />
-                            New York 10018 </p>
-                        <p>+1 212 502 4734 </p>
+                        <p>330 West 38th Street, Suite 1005 <br />New York, New York 10018</p>
                     </address>
+                    <div>
+                        <p>+1 212 502 4734 </p>
+                        <p><a class="hover" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;">&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;</a></p>
+                    </div>
                     <div class="social">
-                        <ul>
-                            <li><a href="https://www.facebook.com/piscatello"><i class="icon-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/piscatellopdc"><i class="icon-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/1592063"><i class="icon-linkedin"></i></a></li>
+                        <p><a href="https://www.facebook.com/piscatello" target="_blank">Facebook</p>
+                        <p><a href="https://www.linkedin.com/company/1592063" target="_blank">LinkedIn</a></p>
                         </ul>
                     </div>
                 </article>
+
             </div>
         </footer>
     </div>

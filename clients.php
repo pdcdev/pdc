@@ -5,7 +5,6 @@
 */
 
 ?>
-
     <?php while( have_posts() ) : the_post(); ?>
     <div class="clients_wrapper">
         <aside class="clients">
@@ -15,5 +14,4 @@
         </aside>
     </div>
     <?php endwhile; ?>
-
 <?php get_footer(); ?>

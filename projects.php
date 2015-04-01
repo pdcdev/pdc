@@ -21,7 +21,6 @@ get_header(); ?>
             );
             $the_query = new WP_Query( $args );
         ?>
-
         <?php if ( have_posts() ) : ?>
         <aside class="projects_container">
             <div>
