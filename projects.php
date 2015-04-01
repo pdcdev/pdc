@@ -5,7 +5,7 @@
 get_header(); ?>
         <section class="projects_description">
             <article class="narrative">
-                <h3 class="title"></h3>
+                <h3 class="title">Our Work</h3>
                 <?php if( get_field("project_page_description") ): ?>
                 <div class="text">
                     <p><?php the_field("project_page_description"); ?></p>
