@@ -2692,7 +2692,8 @@ section.studio_double div.double img:nth-of-type(2) {
           .footer_container footer .footer_name:last-child {
             margin-right: 0; } }
       .footer_container footer .footer_name h4 {
-        font-family: "RotisSemiSansW01-ExtraB"; }
+        font-family: "RotisSemiSansW01-ExtraB";
+        line-height: 1.2em; }
       .footer_container footer .footer_name a {
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
@@ -2700,7 +2701,8 @@ section.studio_double div.double img:nth-of-type(2) {
         .footer_container footer .footer_name a:hover {
           color: rgba(255, 255, 255, 0.6); }
       .footer_container footer .footer_name p.copy {
-        color: #939598; }
+        color: #939598;
+        line-height: .9em; }
         .footer_container footer .footer_name p.copy span {
           position: relative;
           font-size: 1.5em;

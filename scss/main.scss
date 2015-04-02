@@ -2131,6 +2131,7 @@ $footer_color: #939598;
             }
             h4 {
                 font-family: $rotisSemiSansExtraBold;
+                line-height: 1.2em;
             }
             color: $footer_color;
             font-size: $small-text;
@@ -2142,6 +2143,7 @@ $footer_color: #939598;
             }
             p.copy {
                 color: $footer_color;
+                line-height: .9em;
                 span {
                     position: relative;
                     font-size: 1.5em;
