@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){var t=document.querySelector("#gallery");e(window).load(function(){var e=new Masonry(t,{itemSelector:".item"})})});

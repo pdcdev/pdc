@@ -2,16 +2,16 @@
         <footer>
             <div>
                 <div class="footer_name">
-                    <h4><a href="<?php echo home_url(); ?>">Piscatello Design Centre</a></h4>
-                    <p class="copy">Copyright <span>&copy;</span> <?php echo date("Y") ?></p>
+                    <h4>Piscatello Design Centre</h4>
+                    <p class="copy"><span>&copy;</span> 1997&ndash;<?php echo date("Y") ?> PDC</p>
                 </div>
                 <article class="footer_contact">
                     <address>
-                        <p>330 West 38th Street, Suite 1005 <br />New York, New York 10018</p>
+                        <p>330 West 38th Street<br />New York, NY 10018</p>
                     </address>
                     <div>
-                        <p>+1 212 502 4734 </p>
-                        <p><a class="hover" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;">&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;</a></p>
+                        <p>+1 212 502 4734</p>
+                        <p><a class="hover" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#115;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;">&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#115;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;</a></p>
                     </div>
                     <div class="social">
                         <p><a href="https://www.facebook.com/piscatello" target="_blank">Facebook</p>

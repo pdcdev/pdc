@@ -2113,9 +2113,9 @@ $footer_color: #939598;
         @include media($mobile) {
             height: 290px;       
         }
-        line-height: 1.25em;
+        line-height: 1.2em;
         > div {
-            @include pad(1.75em 0 0 0);
+            @include pad(1.9em 0 0 0);
             @include media($tablet) {
                 @include pad(.5em 0 0 0);
             }
@@ -2133,7 +2133,7 @@ $footer_color: #939598;
                 font-family: $rotisSemiSansExtraBold;
             }
             color: $footer_color;
-            font-size: $header-type-size;
+            font-size: $small-text;
             a {
                 @include transition (all .25s ease-in-out);
                 &:hover {
@@ -2159,7 +2159,6 @@ $footer_color: #939598;
             @include media($mobile) {
                 @include span-columns(4);
             }
-            font-size: $header-type-size;
             > div, address {
                 @include span-columns(4 of 12);
                 @include media($tablet) {
@@ -2173,22 +2172,9 @@ $footer_color: #939598;
             .title {
                 font-family: $rotisSemiSansExtraBold;
             }
-            .social {
-                ul {
-                    li {
-                        float: left;
-                        a {
-                            display: inline;
-                            color: $footer_color;
-                            &:hover {
-                                color: $hover-color;
-                            }
-                        }
-                    }
-                }
-            }
             p {
                 color: #939598;
+                font-size: $small-text;
             }
             a {
                 @include transition (all .2s ease-in-out);
@@ -2205,4 +2191,15 @@ $footer_color: #939598;
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
+}
+#gallery {
+    @include outer-container;
+    @extend .sidepad;
+    .item {
+        @include span-columns(4);
+        @include pad(0 0 2em 0);
+        img {
+            width: 100%;
+        }
+    }
 }

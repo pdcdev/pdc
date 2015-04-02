@@ -30,10 +30,12 @@ function theme_js() {
     wp_register_script( 'map', get_template_directory_uri() . '/js/map-ck.js', array('jquery'), '', true );
     wp_register_script( 'projects', get_template_directory_uri() . '/js/projects-ck.js', array('jquery'), '', true );
     wp_register_script( 'studio', get_template_directory_uri() . '/js/studio-ck.js', array('jquery'), '', true );
+    wp_register_script( 'gallery', get_template_directory_uri() . '/js/gallery-ck.js', array('jquery'), '', true );
     wp_register_script( 'contact', get_template_directory_uri() . '/js/contact-ck.js', array('jquery'), '', true );
     wp_register_script( 'single-project', get_template_directory_uri() . '/js/single-project-ck.js', array('jquery'), '', true );
     wp_register_script( 'stats-generator', get_template_directory_uri() . '/js/stats-generator-ck.js', array('jquery'), '', true );
     wp_register_script( 'stats-animator', get_template_directory_uri() . '/js/stats-animator-ck.js', array('jquery'), '', true );
+    wp_register_script( 'masonry', get_template_directory_uri() . '/js/masonry.js', array('jquery'), '', true );
     
     if( is_single() ) {
         wp_enqueue_script( 'single-project' );
@@ -49,6 +51,10 @@ function theme_js() {
     }
     if( is_page('studio') ) {
         wp_enqueue_script( 'studio' );
+    }
+    if( is_page('gallery') ) {
+        wp_enqueue_script( 'gallery' );
+        wp_enqueue_script( 'masonry' );
     }
     if( is_page('contact') ) {
         wp_enqueue_script( 'map' );
@@ -66,15 +72,6 @@ function any_ptype_on_cat($request) {
 
     return $request;
 }
-
-function pdc_add_dashboard_widgets() {
-    wp_add_dashboard_widget(
-             'pdc_dashboard_widget',         // Widget slug.
-             'Welcome to PDC!',         // Title.
-             'pdc_dashboard_widget_function' // Display function.
-    );
-}
-add_action( 'wp_dashboard_setup', 'pdc_add_dashboard_widgets' );
 
 function pdc_dashboard_widget_function() {
     // Display whatever it is you want to show.
