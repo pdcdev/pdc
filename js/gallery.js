@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
 
     $(window).load(function(){
         var msnry = new Masonry( container, {
-            itemSelector: '.item'
+            itemSelector: '.item',
+            gutter: 10
         });
     });
 
