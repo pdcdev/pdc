@@ -49,7 +49,7 @@ function theme_js() {
         wp_enqueue_script( 'stats-animator' );
     }
     if( is_page('home') || is_page('test') ) {
-        wp_enqueue_script( 'flexslider' );
+        // wp_enqueue_script( 'flexslider' );
         wp_enqueue_script( 'home' );
         wp_enqueue_script( 'fullpage' );
         wp_enqueue_script( 'scroll_to' );
