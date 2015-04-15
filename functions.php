@@ -11,10 +11,6 @@ function theme_styles() {
     wp_enqueue_style( 'animation-ie7', get_template_directory_uri() . '/css/fontello/css/fontello-ie7.css' );
     wp_enqueue_style( 'fontello', get_template_directory_uri() . '/css/fontello/css/fontello.css' );
     wp_enqueue_style( 'stroll', get_template_directory_uri() . '/css/stroll.min.css' );
-    wp_register_style( 'fullPage', get_template_directory_uri() . '/css/fullPage.css' );
-    if( is_page('home') ) {
-        wp_enqueue_style("fullPage");
-    }
 }
 // load the theme js
 function theme_js() {
@@ -40,19 +36,15 @@ function theme_js() {
     wp_register_script( 'stats-generator', get_template_directory_uri() . '/js/stats-generator-ck.js', array('jquery'), '', true );
     wp_register_script( 'stats-animator', get_template_directory_uri() . '/js/stats-animator-ck.js', array('jquery'), '', true );
     wp_register_script( 'masonry', get_template_directory_uri() . '/js/masonry.js', array('jquery'), '', true );
-    wp_register_script( 'fullpage', get_template_directory_uri() . '/js/fullpage.js', array('jquery'), '', true );
-    wp_register_script( 'scroll_to', get_template_directory_uri() . '/js/scroll_to.js', array('jquery'), '', true );
-
+    
     if( is_single() ) {
         wp_enqueue_script( 'single-project' );
         wp_enqueue_script( 'stats-generator' );
         wp_enqueue_script( 'stats-animator' );
     }
     if( is_page('home') || is_page('test') ) {
-        // wp_enqueue_script( 'flexslider' );
+        wp_enqueue_script( 'flexslider' );
         wp_enqueue_script( 'home' );
-        wp_enqueue_script( 'fullpage' );
-        wp_enqueue_script( 'scroll_to' );
     }
     if( is_page('projects') ) {
         wp_enqueue_script( 'projects' );

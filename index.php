@@ -4,10 +4,10 @@
 
 if( get_field('home_featured') ): ?>
     <div class="home_featured" style="opacity:0">
-        <div id="fullpage" class="projects_container">
-            <ul class="section">
+        <div class="projects_container flexslider">
+            <ul class="slides">
         <?php while ( have_rows('home_featured') ) : the_row(); ?>
-                <li class="slide">
+                <li>
                     <div class="image_container">
                     <?php if(get_sub_field("home_page_image")) : ?>
                         <div class="image_box eighty_height horizontal" style="background-image:url('<?php get_image( get_sub_field('home_page_image'), "cover_nocrop"); ?>');"></div>
