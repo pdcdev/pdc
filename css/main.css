@@ -2785,12 +2785,7 @@ section.studio_double div.double img:nth-of-type(2) {
   #gallery:after {
     clear: both; }
   #gallery .item {
-    display: block;
-    float: left;
-    margin-right: 1.7341%;
-    width: 23.69942%;
+    /*@include span-columns(4);*/
     padding: 0 0 2em 0; }
-    #gallery .item:last-child {
-      margin-right: 0; }
     #gallery .item img {
       width: 100%; }

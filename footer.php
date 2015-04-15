@@ -3,7 +3,7 @@
             <div>
                 <div class="footer_name">
                     <h4>Piscatello Design Centre</h4>
-                    <p class="copy"><span>&copy;</span> 1997&ndash;<?php echo date("Y") ?> PDC</p>
+                    <p class="copy"><span>&copy;</span> 1997&ndash;<?php echo date("Y"); ?> PDC</p>
                 </div>
                 <article class="footer_contact">
                     <address>
