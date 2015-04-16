@@ -1834,8 +1834,10 @@ section {
   .studio_more_arrow i {
     display: block;
     font-family: fontello;
-    text-align: center;
+    display: table;
+    margin: 0 auto;
     font-size: 2em;
+    cursor: pointer;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -1892,17 +1894,14 @@ section {
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
       transform: translateY(0);
-      opacity: 1;
-      cursor: pointer; }
+      opacity: 1; }
     .more_arrow i.light_arrow {
       color: white; }
       .more_arrow i.light_arrow:hover {
-        /*color: rgba(#fff, 1);*/
         color: #e71c37; }
     .more_arrow i.dark_arrow {
       color: black; }
       .more_arrow i.dark_arrow:hover {
-        /*color: rgba(#000, 1);*/
         color: #e71c37; }
 
 .internal_btn {
