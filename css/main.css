@@ -1892,7 +1892,8 @@ section {
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
       transform: translateY(0);
-      opacity: 1; }
+      opacity: 1;
+      cursor: pointer; }
     .more_arrow i.light_arrow {
       color: white; }
       .more_arrow i.light_arrow:hover {

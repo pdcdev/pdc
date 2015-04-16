@@ -1567,6 +1567,7 @@ section {
         &.visible {
             @include transform(translateY(0));
             opacity: 1;
+            cursor: pointer;
         }
         &.light_arrow {
             color: rgba(#fff, 1);
