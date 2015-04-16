@@ -258,7 +258,6 @@ section {
             a {
                 color: rgba(#fff, .6);
                 &:after {
-                    /*content:"/";*/
                     @include pad(0 0 0 2em);
                     color: rgba(#fff, .77);
                 }
@@ -867,59 +866,34 @@ $project_title_color: rgba(0,0,0,.6);
     &.whitebg {
         background-color: #fff;
     }
-    @include pad(5em 0);
-
+    @include pad(1.5em 0 .5em 0);
     .clients {
         @include outer-container;
         @include pad(0 $desk);
         z-index: 1000;
-        @include media($tablet) {
-            @include pad(30px);
-        }
-        @include clearfix;
-        .clients_rule {
-            display: block;
+        img {
             width: 100%;
-            @include clearfix;
         }
-        .client {
-            @include span-columns(4);
-            @include omega(4n);
+        .logos_desktop {
+            display: block;
             @include media($tablet) {
-                @include span-columns(4);
-                @include omega(2n);
+                display: none;
+            }
+        }
+        .logos_tablet {
+            display: none;
+            @include media($tablet) {
+                display: block;
             }
             @include media($mobile) {
-                @include span-columns(4);
-                &:nth-of-type(even) {
-                    display: none;
-                }
+                display: none;
             }
-            background-size: cover;
-            background-repeat: no-repeat;
         }
-    }
-}
-aside.quote {
-    @include outer-container;
-    @extend .sidepad;
-    div {
-        @include pad(16em 0);
-        @include span-columns(8);
-        @include shift(8);
-        @include media($tablet) {
-            @include span-columns(8);
-            @include shift(0);
-            @include pad(8em 0);
-            /*text-align: center;*/
-        }
-        color: $medium-gray;
-        p.the_quote, p.attr {
-            font-size: $homepage-text;
-            font-family: $rotisSemiSansItalic;
-            line-height: 1.2em;
-        }
-        p.attr {
+        .logos_mobile {
+            display: none;
+            @include media($mobile) {
+                display: block;
+            }
         }
     }
 }

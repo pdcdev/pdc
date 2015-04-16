@@ -108,6 +108,11 @@ function my_login_stylesheet() {
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
 
 add_action( 'admin_init', 'pdc_remove_dashboard_meta' );
 add_action( 'admin_menu', 'pdc_remove_menus' );

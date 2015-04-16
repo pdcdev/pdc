@@ -40,9 +40,9 @@ if( get_field('home_featured') ): ?>
 <?php endif; ?>
     <div class="clients_wrapper graybg">
         <aside class="clients">
-            <?php $i = 0; while( $i < 16 ) : ?>
-            <div class="client sixteen-nine" style="background-image:url('<?php bloginfo('stylesheet_directory'); ?>/images/clientlogos.png'); background-position:<?php echo  $i * 6.66 . "%" ?>;"></div>
-            <?php $i++; endwhile; ?>
+            <img class="logos_desktop" src="<?php bloginfo('stylesheet_directory'); ?>/images/client_logos/PDC_ClientLogos_Desktop.svg"/>
+            <img class="logos_tablet"  src="<?php bloginfo('stylesheet_directory'); ?>/images/client_logos/PDC_ClientLogos_Tablet.svg"/>
+            <img class="logos_mobile"  src="<?php bloginfo('stylesheet_directory'); ?>/images/client_logos/PDC_ClientLogos_Mobile.svg"/>
         </aside>
     </div>
 

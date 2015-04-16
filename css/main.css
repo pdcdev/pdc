@@ -11,13 +11,13 @@ a.hover {
   a.hover:hover {
     color: #e71c37; }
 
-.sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, aside.quote, .project .website_link, #gallery {
+.sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, .project .website_link, #gallery {
   padding: 0 40px; }
   @media screen and (max-width: 768px) {
-    .sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, aside.quote, .project .website_link, #gallery {
+    .sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, .project .website_link, #gallery {
       padding: 0 40px; } }
   @media screen and (max-width: 480px) {
-    .sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, aside.quote, .project .website_link, #gallery {
+    .sidepad, .header_container header .logo_container, .home_cover > div p, .home_featured ul li .tintbg .project_label_container, .project .website_link, #gallery {
       padding: 0 30px; } }
 
 .vertical_center_parent {
@@ -162,7 +162,6 @@ section {
   .clearbg ul li a {
     color: rgba(255, 255, 255, 0.6); }
     .clearbg ul li a:after {
-      /*content:"/";*/
       padding: 0 0 0 2em;
       color: rgba(255, 255, 255, 0.77); }
   .clearbg ul .current_page_item a, .clearbg ul .current_menu_item a {
@@ -879,7 +878,7 @@ aside.side_gist {
   pointer-events: include; }
 
 .clients_wrapper {
-  padding: 5em 0; }
+  padding: 1.5em 0 0.5em 0; }
   .clients_wrapper.graybg {
     background-color: #f3f4f4; }
   .clients_wrapper.whitebg {
@@ -890,101 +889,32 @@ aside.side_gist {
     margin-left: auto;
     margin-right: auto;
     padding: 0 40px;
-    z-index: 1000;
-    *zoom: 1; }
+    z-index: 1000; }
     .clients_wrapper .clients:before, .clients_wrapper .clients:after {
       content: " ";
       display: table; }
     .clients_wrapper .clients:after {
       clear: both; }
-    @media screen and (max-width: 768px) {
-      .clients_wrapper .clients {
-        padding: 30px; } }
-    .clients_wrapper .clients:before, .clients_wrapper .clients:after {
-      content: " ";
-      display: table; }
-    .clients_wrapper .clients:after {
-      clear: both; }
-    .clients_wrapper .clients .clients_rule {
-      display: block;
-      width: 100%;
-      *zoom: 1; }
-      .clients_wrapper .clients .clients_rule:before, .clients_wrapper .clients .clients_rule:after {
-        content: " ";
-        display: table; }
-      .clients_wrapper .clients .clients_rule:after {
-        clear: both; }
-    .clients_wrapper .clients .client {
-      display: block;
-      float: left;
-      margin-right: 1.7341%;
-      width: 23.69942%;
-      background-size: cover;
-      background-repeat: no-repeat; }
-      .clients_wrapper .clients .client:last-child {
-        margin-right: 0; }
-      .clients_wrapper .clients .client:nth-child(4n) {
-        margin-right: 0; }
-      .clients_wrapper .clients .client:nth-child(4n+1) {
-        clear: left; }
+    .clients_wrapper .clients img {
+      width: 100%; }
+    .clients_wrapper .clients .logos_desktop {
+      display: block; }
       @media screen and (max-width: 768px) {
-        .clients_wrapper .clients .client {
-          display: block;
-          float: left;
-          margin-right: 3.52941%;
-          width: 48.23529%; }
-          .clients_wrapper .clients .client:last-child {
-            margin-right: 0; }
-          .clients_wrapper .clients .client:nth-child(2n) {
-            margin-right: 0; }
-          .clients_wrapper .clients .client:nth-child(2n+1) {
-            clear: left; } }
+        .clients_wrapper .clients .logos_desktop {
+          display: none; } }
+    .clients_wrapper .clients .logos_tablet {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        .clients_wrapper .clients .logos_tablet {
+          display: block; } }
       @media screen and (max-width: 480px) {
-        .clients_wrapper .clients .client {
-          display: block;
-          float: left;
-          margin-right: 7.31707%;
-          width: 100%; }
-          .clients_wrapper .clients .client:last-child {
-            margin-right: 0; }
-          .clients_wrapper .clients .client:nth-of-type(even) {
-            display: none; } }
-
-aside.quote {
-  *zoom: 1;
-  max-width: 93.75em;
-  margin-left: auto;
-  margin-right: auto; }
-  aside.quote:before, aside.quote:after {
-    content: " ";
-    display: table; }
-  aside.quote:after {
-    clear: both; }
-  aside.quote div {
-    padding: 16em 0;
-    display: block;
-    float: left;
-    margin-right: 1.7341%;
-    width: 49.13295%;
-    margin-left: 50.86705%;
-    color: #b3b9ba; }
-    aside.quote div:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      aside.quote div {
-        display: block;
-        float: left;
-        margin-right: 3.52941%;
-        width: 100%;
-        margin-left: 0%;
-        padding: 8em 0;
-        /*text-align: center;*/ }
-        aside.quote div:last-child {
-          margin-right: 0; } }
-    aside.quote div p.the_quote, aside.quote div p.attr {
-      font-size: 1.75em;
-      font-family: "RotisSemiSansW01-Italic";
-      line-height: 1.2em; }
+        .clients_wrapper .clients .logos_tablet {
+          display: none; } }
+    .clients_wrapper .clients .logos_mobile {
+      display: none; }
+      @media screen and (max-width: 480px) {
+        .clients_wrapper .clients .logos_mobile {
+          display: block; } }
 
 .statement_bar {
   display: none;
