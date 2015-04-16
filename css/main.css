@@ -1858,6 +1858,8 @@ section {
       -o-transform: translateY(0);
       transform: translateY(0);
       opacity: 1; }
+    .studio_more_arrow i:hover {
+      color: #fff; }
 
 .more_arrow {
   *zoom: 1;
