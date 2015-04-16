@@ -1826,6 +1826,37 @@ section {
     width: 100%;
     background-color: #444; }
 
+.studio_more_arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; }
+  .studio_more_arrow i {
+    display: block;
+    font-family: fontello;
+    text-align: center;
+    font-size: 2em;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-animation: scale 1s ease-in, slide 2s ease;
+    -moz-animation: scale 1s ease-in, slide 2s ease;
+    animation: scale 1s ease-in, slide 2s ease; }
+    .studio_more_arrow i.hidden {
+      -webkit-transform: translateY(1em);
+      -moz-transform: translateY(1em);
+      -ms-transform: translateY(1em);
+      -o-transform: translateY(1em);
+      transform: translateY(1em);
+      opacity: 0; }
+    .studio_more_arrow i.visible {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
+
 .more_arrow {
   *zoom: 1;
   height: 0; }

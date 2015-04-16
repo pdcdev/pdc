@@ -1525,6 +1525,28 @@ section {
         background-color: #444;
     }
 }
+.studio_more_arrow {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: 60px;
+    i {
+        display: block;
+        font-family: fontello;
+        text-align: center;
+        font-size: 2em;
+        @include transition (all .5s ease-in-out);
+        @include animation(scale 1.0s ease-in, slide 2.0s ease);
+        &.hidden {
+            @include transform(translateY(1em));
+            opacity: 0;
+        }
+        &.visible {
+            @include transform(translateY(0));
+            opacity: 1;
+        }
+    }
+}
 .more_arrow {
     @include clearfix;
     height: 0;

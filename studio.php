@@ -5,18 +5,20 @@
 */
 
 get_header(); ?>
+    <div class="studio_more_arrow">
+        <i class="icon-down dark_arrow hidden"></i>
+    </div>
     <?php if ( have_posts() ) :?>
         <aside class="about_image">
             <img src="<?php the_field('studio_header'); ?>">
         </aside>
     <?php endif;?>
-    <section>
+    <section class="profile_section">
         <?php if( get_field( "profile" ) ) : ?>
         <article class="narrative">
             <h3 class="title">Profile</h3>
             <div class="text">
-                    <?php the_field( "profile" ); ?>
-                
+                <?php the_field( "profile" ); ?>
             </div>
         </article>
         <?php endif; ?>
