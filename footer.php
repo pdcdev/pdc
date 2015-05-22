@@ -15,7 +15,7 @@
                     </div>
                     <div class="social">
                         <p><a href="https://www.linkedin.com/company/1592063" target="_blank">LinkedIn</a></p>
-                        <p><a href="https://www.twitter.com/piscatelloPDC" target="_blank">Twitter</p>
+                        <p><a href="https://www.twitter.com/piscatelloPDC" target="_blank">Twitter</a></p>
                     </div>
                 </article>
             </div>
