@@ -14,9 +14,8 @@
                         <p><a class="hover" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#115;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;">&#112;&#114;&#111;&#106;&#101;&#99;&#116;&#115;&#64;&#112;&#105;&#115;&#99;&#97;&#116;&#101;&#108;&#108;&#111;&#46;&#99;&#111;&#109;</a></p>
                     </div>
                     <div class="social">
-                        <p><a href="https://www.twitter.com/piscatello" target="_blank">Twitter</p>
                         <p><a href="https://www.linkedin.com/company/1592063" target="_blank">LinkedIn</a></p>
-                        </ul>
+                        <p><a href="https://www.twitter.com/piscatelloPDC" target="_blank">Twitter</p>
                     </div>
                 </article>
             </div>
