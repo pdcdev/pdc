@@ -1912,7 +1912,7 @@ section {
   @media screen and (max-width: 480px) {
     .internal_btn {
       margin-left: 0%; } }
-  .internal_btn a {
+  .internal_btn a, .internal_btn p {
     padding: 1em 1.25em 1em 1.1em;
     border: 1px solid #000;
     color: #000;
@@ -1922,12 +1922,12 @@ section {
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
     @media screen and (max-width: 480px) {
-      .internal_btn a {
+      .internal_btn a, .internal_btn p {
         display: table;
         margin: 0 auto; } }
-    .internal_btn a i {
+    .internal_btn a i, .internal_btn p i {
       padding: 0 0.75em 0 0; }
-    .internal_btn a:hover {
+    .internal_btn a:hover, .internal_btn p:hover {
       border: 1px solid #e71c37;
       background-color: #e71c37;
       color: #fff; }

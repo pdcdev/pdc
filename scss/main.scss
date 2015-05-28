@@ -1484,7 +1484,7 @@ section {
     @include media($mobile) {
         @include shift(0);
     }
-    a {
+    a, p {
         @include pad(1em 1.25em 1em 1.10em);
         border: 1px solid #000;
         color: #000;

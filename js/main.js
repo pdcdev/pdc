@@ -67,4 +67,13 @@ jQuery(document).ready(function($) {
         fullheight_size();
     });
 
+(function( $ ) {
+    $(function() {
+        if( $( "#pagination" ).length ) {
+            $( "#pagination" ).wpPagination();
+        }
+    });
+    
+})( jQuery );
+
 });

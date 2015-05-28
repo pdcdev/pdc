@@ -91,7 +91,7 @@ function pdc_remove_menus(){
   remove_menu_page( 'edit-comments.php' );          //Comments
   // remove_menu_page( 'themes.php' );                 //Appearance
   // remove_menu_page( 'plugins.php' );                //Plugins
-  remove_menu_page( 'users.php' );                  //Users
+  //remove_menu_page( 'users.php' );                  //Users
   // remove_menu_page( 'tools.php' );                  //Tools
   // remove_menu_page( 'options-general.php' );        //Settings
 }
@@ -118,6 +118,23 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+// ajax begin
+
+function localize_ajax() {
+    wp_enqueue_script( 'localize_ajax', get_template_directory_uri() . '/js/ajax_calls.js', array('jquery'), '', true );
+    wp_localize_script( 'localize_ajax', 'my_ajax_script', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+}
+
+$dirName = dirname(__FILE__);
+$baseName = basename(realpath($dirName));
+require_once ("$dirName/ajax_functions.php");
+
+add_action('template_redirect', 'localize_ajax');
+add_action("wp_ajax_nopriv_query_news", "query_news");
+add_action("wp_ajax_query_news", "query_news");
+
+// ajax end
 
 add_action( 'admin_init', 'pdc_remove_dashboard_meta' );
 add_action( 'admin_menu', 'pdc_remove_menus' );
