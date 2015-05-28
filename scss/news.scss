@@ -1,0 +1,51 @@
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+@import "utilities/variables";
+@import "utilities/universal";
+
+div.news_section {
+    @include pad(0);
+    div.news_container {
+        article.news_item {
+            div.news_image {
+                a {
+                    div {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            div.news_excerpt {
+                @include outer-container;
+                @include vertpad();
+                @extend .sidepad;
+                div.post_date, div.excerpt {
+                    @include span-columns(8);
+                    @include media($tablet) {
+                        @include span-columns(8);
+                    }
+                }
+                div.post_date {
+                    @include type($medium, $dark-gray);
+                }
+                div.excerpt {
+                    h4 {
+                        @include type($medium, #000);
+                        @include pad(0 0 1em 0);
+                        font-weight: normal;
+                        font-family: $rotisSemiSansBold;
+                    }
+                    div {
+                        p {
+                            @include type($medium, $dark-gray);
+                            @include pad(0 0 1em 0);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

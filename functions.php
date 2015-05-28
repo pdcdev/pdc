@@ -11,6 +11,11 @@ function theme_styles() {
     wp_enqueue_style( 'animation-ie7', get_template_directory_uri() . '/css/fontello/css/fontello-ie7.css' );
     wp_enqueue_style( 'fontello', get_template_directory_uri() . '/css/fontello/css/fontello.css' );
     wp_enqueue_style( 'stroll', get_template_directory_uri() . '/css/stroll.min.css' );
+    wp_register_style( 'news', get_template_directory_uri() . '/css/news.css' );
+
+    if( is_page('news') ) {
+        wp_enqueue_style('news');
+    }
 }
 // load the theme js
 function theme_js() {

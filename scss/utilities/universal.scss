@@ -1,0 +1,69 @@
+a.hover {
+    color: inherit;
+    @include transition (all .3s ease-in-out);
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+@mixin vertpad(){
+    @include pad(10em $desk);
+    @include media($tablet) {
+        @include pad(6em $tab);
+    }
+    @include media($mobile) {
+        @include pad(3em $mob);
+    }
+}
+.sidepad {
+    @include pad(0 $desk);
+    @include media($tablet) {
+        @include pad(0 $tab);
+    }
+    @include media($mobile) {
+        @include pad(0 $mob);
+    }
+}
+.vertical_center_parent {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin type( $size: $small-text, $color: inherit, $lineheight: inherit ) {
+    color: $color;
+    line-height: $lineheight;
+    @if $size == "small" {
+        font-size: $small-text;
+        @include media($tablet) {
+            font-size: $small-text-tablet;
+        }
+        @include media($mobile) {
+            font-size: $small-text-mobile;
+        }
+    } @else if $size == "medium" {
+        font-size: $medium-text;
+        @include media($tablet) {
+            font-size: $medium-text-tablet;
+        }
+        @include media($mobile) {
+            font-size: $medium-text-mobile;
+        }
+    } @else if $size == "large" {
+        font-size: $large-text;
+        @include media($tablet) {
+            font-size: $large-text-tablet;
+        }
+        @include media($mobile) {
+            font-size: $large-text-mobile;
+        }
+    }
+}
